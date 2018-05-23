@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="firstCSSever.css">
+  <style>
+   table.text  {
+    width: 70%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+   }
+   table.text td {
+    width: 50%; /* Ширина ячеек */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+   }
+   td.rightcol { /* Правая ячейка */ 
+    text-align: left; /* Выравнивание по правому краю */
+   }
+   
+  </style>
+	<title>
+		Tasks page ? wow!
+	</title>
+</head>
+<body>
+	
+	
+	<table class="text">
+		<tr>
+			<td>
+	<h1>Task 3</h1>
+	<p id="preCount"></p>
+	<p id="afterCount"> </p>
+	<input type="button" value="Click here to run task3" onclick="task3()">
+	<script defer="true">
+	function task3()
+	{		
+	var preCount = document.getElementById("preCount")
+	preCount.innerText = 'Rabit count:'
+	alert('Rabbit1')
+	alert('Rabbit2')
+	alert('Rabbit3')
+	var afterCount = document.getElementById("afterCount")
+	afterCount.innerText = 'No more rabits!'
+	}
+	</script>
+
+	<h1>Task 4</h1>
+	<input type="button" value="Click here to run task 4" onclick="task4()">
+	 <script src="task4.js">
+		function task4()
+	</script>
+
+	<h1>Task 5</h1>
+	<input type="button" value="Click here to run task 5" onclick="task5()">
+
+	<script type="text/javascript">
+		function task5 (){
+		var q1 = prompt ('That`s the official name of javascript')		
+		if (q1 != "EcmaScript")
+		{
+			alert ('Don`t know? \nit is "EcmaScript"!')
+		}
+		else {
+			alert('correct!')
+		}
+	}
+	</script>
+
+	<h1>Task 6</h1>
+	<input type="button" value="Click here to run task 6" onclick="task6()">
+
+	<script type="text/javascript">
+		function task6 (){
+		var q2 = prompt("Please enter any value", "right here")	
+		if (q2 == 0)
+		{
+			alert ("0");
+		}
+		else if (q2 > 0) {
+			alert ("1");
+		}	
+		else {
+		 alert("-1")
+		}
+	}
+	</script>
+	<br>
+	<h1>Task 0.0</h1>
+	<input type="button" value="Please click here to run task" onclick="task0()">
+	<script type="text/javascript">
+		function task0(){
+			var entrance = prompt ("type any primal element")
+			switch (entrance){
+				case "fire":
+				alert("hot");
+				break;
+				case "water":
+				alert ('wet');
+				break;
+				case "earth":
+				alert("durable");
+				break;
+				default:
+				alert ("probaly this is a water");
+			}
+		}
+	</script>
+
+			
+
+</td>
+
+		<td>
+			<img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png">
+					</td>
+
+		<td class="rightcol">
+		<h1>Task 7</h1>
+		<input type="button" value="Click here to run task 7" onclick="task7()">
+		<script src="task7.js">function task7()</script>
+		
+		<h1>Task 8</h1>
+		<input type="button" value="Click here to run task 8" onclick="task8()">
+		<script>
+			function task8(){
+			var a = prompt("A = ");
+			var b = prompt ("B = ");
+			(+a + +b < 4) ? alert("low") : alert ("Many")
+		}
+		</script>
+
+		<h1>Task 9</h1>
+		<input type="button" value="Click here to run task 9" onclick="task9()">
+			<script type="text/javascript">
+				function task9(){
+					var age = prompt("age is")
+					var f = (14 <= +age && +age <= 90)
+					alert (f)
+					alert (14>= +age && +age>=90)
+					alert (!f)
+				}
+			</script>
+		<h1>Task 10</h1>
+		<input type="button" value="Click here to run task 10 (in progress)" onclick="task10()">
+		<script type="text/javascript">
+			function task10(){
+				alert(String(null)=="null")
+				alert(Number("200")=="200")
+				alert(Boolean("1")==true)
+				}
+
+		</script>
+			<h1>Task 11</h1>
+			<input type="button" value="Click here to run task 11" onclick="task11()">
+
+			<script type="text/javascript">
+				function task11(){
+						/*for (var i=0;i<11;i++)
+						{
+							if (0 == i%2) {
+								alert(i)
+							}
+						}
+				}*/
+					var i = 1
+					while (i){
+						if(i%2 == 0) alert (i);
+						if (i==10) break;
+						++i;
+						}
+					}
+			/*for (i=1;i<11;i++){
+				if(i%2!=0) alert (i);
+			}*/
+			</script>
+<h1>Task 12</h1>
+<input type="button" value="Click here to run task 12", onclick="task12()">
+<script type="text/javascript">
+	function task12(){
+		var textRecognition = prompt("Please enter text here");
+		var st = String(textRecognition)
+		var nm = Number(textRecognition)
+		var typeOfData
+		//alert (st)
+		//alert (nm)
+		if (st == st && isNaN(nm)) {
+			typeOfData = "string"
+			}
+		else typeOfData = "number"
+		 /*if (st != null && nm != null) {
+			typeOfData = "number"
+		}
+		else {typeOfData = "null"}*/
+				
+		switch(typeOfData)
+		{ 	case "number":
+			alert ("this is number");
+			break;
+			case "null":
+			alert("this is zero");
+			break;
+			case "string": 
+			alert("this is string");
+			break;
+			default:
+			alert("unknow input");
+		}
+
+	}
+</script>
+
+		</td>
+	</tr>
+<table>
+	<footer>
+    <div id="footer"><br><br><br>Made by RD.<br><br><br></div>
+  	</footer>
+</body>
+</html>

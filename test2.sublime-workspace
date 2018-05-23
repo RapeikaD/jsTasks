@@ -4,6 +4,114 @@
 		"selected_items":
 		[
 			[
+				"ty",
+				"typeOfData"
+			],
+			[
+				"tex",
+				"textRecognition"
+			],
+			[
+				"pro",
+				"prompt"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"t",
+				"task8"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"f",
+				"footer"
+			],
+			[
+				"mid",
+				"midcol"
+			],
+			[
+				"as",
+				"askPassword"
+			],
+			[
+				"pr",
+				"prompt"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"task",
+				"task7"
+			],
+			[
+				"r",
+				"rightcol"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"ta",
+				"task3"
+			],
+			[
+				"Tas",
+				"task4"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"i",
+				"infoMessage"
+			],
+			[
+				"part",
+				"part2"
+			],
+			[
+				"par",
+				"part1"
+			],
+			[
+				"pa",
+				"part1"
+			],
+			[
+				"a",
+				"armoe"
+			],
+			[
+				"o",
+				"or"
+			],
+			[
+				"Ad",
+				"Adapt5"
+			],
+			[
+				"ad",
+				"Adapt2"
+			],
+			[
 				"me",
 				"meta\tTag"
 			]
@@ -12,19 +120,28 @@
 	"buffers":
 	[
 		{
-			"file": "No way.html",
+			"file": "sand.html",
 			"settings":
 			{
-				"buffer_size": 374,
+				"buffer_size": 677,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "first.js",
+			"file": "SandJS.js",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 375,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Task5.html",
+			"settings":
+			{
+				"buffer_size": 4001,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -42,12 +159,8 @@
 		"selected_items":
 		[
 			[
-				"v",
+				"br",
 				"View In Browser"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
 			]
 		],
 		"width": 0.0
@@ -70,9 +183,18 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/User/Test.sublime-build",
-		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/User/RunJS.sublime-build",
-		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build"
+		"/D/JS/firstCSSever.css",
+		"/D/JS/task7.js",
+		"/D/JS/task5.js",
+		"/D/JS/Tasks1-3.html",
+		"/D/JS/Task4.js",
+		"/D/JS/Task4.html",
+		"/D/JS/Adaptation.js",
+		"/D/JS/SandJS",
+		"/D/JS/first.js",
+		"/D/JS/Adaptation",
+		"/D/JS/wer",
+		"/D/JS/Task4"
 	],
 	"find":
 	{
@@ -107,24 +229,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "No way.html",
+					"file": "sand.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 374,
+						"buffer_size": 677,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								265,
-								265
+								69,
+								69
 							]
 						],
 						"settings":
@@ -135,16 +257,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "first.js",
+					"file": "SandJS.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 375,
 						"regions":
 						{
 						},
@@ -165,6 +287,34 @@
 					},
 					"stack_index": 1,
 					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Task5.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3855,
+								3855
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2853.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
 				}
 			]
 		}
@@ -175,7 +325,7 @@
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 0.0
 	},
 	"layout":
 	{
@@ -202,14 +352,14 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 328.0
+		"height": 126.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"pinned_build_system": "Packages/User/Test.sublime-build",
-	"project": "firstProject.sublime-project",
+	"project": "test2.sublime-project",
 	"replace":
 	{
 		"height": 0.0
