@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"type",
+				"typeOfData"
+			],
+			[
+				"s",
+				"st"
+			],
+			[
 				"ty",
 				"typeOfData"
 			],
@@ -138,10 +146,13 @@
 			}
 		},
 		{
+			"contents": "<!DOCTYPE html>\n<meta charset=\"utf-8\">\n<html>\n<head>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"firstCSSever.css\">\n  <style>\n   table.text  {\n    width: 70%; /* Ширина таблицы */\n    border-spacing: 0; /* Расстояние между ячейками */\n   }\n   table.text td {\n    width: 50%; /* Ширина ячеек */\n    vertical-align: top; /* Выравнивание по верхнему краю */\n   }\n   td.rightcol { /* Правая ячейка */ \n    text-align: left; /* Выравнивание по правому краю */\n   }\n   \n  </style>\n\t<title>\n\t\tTasks page ? wow!\n\t</title>\n</head>\n<body>\n\t\n\t\n\t<table class=\"text\">\n\t\t<tr>\n\t\t\t<td>\n\t<h1>Task 3</h1>\n\t<p id=\"preCount\"></p>\n\t<p id=\"afterCount\"> </p>\n\t<input type=\"button\" value=\"Click here to run task3\" onclick=\"task3()\">\n\t<script defer=\"true\">\n\tfunction task3()\n\t{\t\t\n\tvar preCount = document.getElementById(\"preCount\")\n\tpreCount.innerText = 'Rabit count:'\n\talert('Rabbit1')\n\talert('Rabbit2')\n\talert('Rabbit3')\n\tvar afterCount = document.getElementById(\"afterCount\")\n\tafterCount.innerText = 'No more rabits!'\n\t}\n\t</script>\n\n\t<h1>Task 4</h1>\n\t<input type=\"button\" value=\"Click here to run task 4\" onclick=\"task4()\">\n\t <script src=\"task4.js\">\n\t\tfunction task4()\n\t</script>\n\n\t<h1>Task 5</h1>\n\t<input type=\"button\" value=\"Click here to run task 5\" onclick=\"task5()\">\n\n\t<script type=\"text/javascript\">\n\t\tfunction task5 (){\n\t\tvar q1 = prompt ('That`s the official name of javascript')\t\t\n\t\tif (q1 != \"EcmaScript\")\n\t\t{\n\t\t\talert ('Don`t know? \\nit is \"EcmaScript\"!')\n\t\t}\n\t\telse {\n\t\t\talert('correct!')\n\t\t}\n\t}\n\t</script>\n\n\t<h1>Task 6</h1>\n\t<input type=\"button\" value=\"Click here to run task 6\" onclick=\"task6()\">\n\n\t<script type=\"text/javascript\">\n\t\tfunction task6 (){\n\t\tvar q2 = prompt(\"Please enter any value\", \"right here\")\t\n\t\tif (q2 == 0)\n\t\t{\n\t\t\talert (\"0\");\n\t\t}\n\t\telse if (q2 > 0) {\n\t\t\talert (\"1\");\n\t\t}\t\n\t\telse {\n\t\t alert(\"-1\")\n\t\t}\n\t}\n\t</script>\n\t<br>\n\t<h1>Task 0.0</h1>\n\t<input type=\"button\" value=\"Please click here to run task\" onclick=\"task0()\">\n\t<script type=\"text/javascript\">\n\t\tfunction task0(){\n\t\t\tvar entrance = prompt (\"type any primal element\")\n\t\t\tswitch (entrance){\n\t\t\t\tcase \"fire\":\n\t\t\t\talert(\"hot\");\n\t\t\t\tbreak;\n\t\t\t\tcase \"water\":\n\t\t\t\talert ('wet');\n\t\t\t\tbreak;\n\t\t\t\tcase \"earth\":\n\t\t\t\talert(\"durable\");\n\t\t\t\tbreak;\n\t\t\t\tdefault:\n\t\t\t\talert (\"probaly this is a water\");\n\t\t\t}\n\t\t}\n\t</script>\n\n\t\t\t\n\n</td>\n\n\t\t<td>\n\t\t\t<img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png\">\n\t\t\t\t\t</td>\n\n\t\t<td class=\"rightcol\">\n\t\t<h1>Task 7</h1>\n\t\t<input type=\"button\" value=\"Click here to run task 7\" onclick=\"task7()\">\n\t\t<script src=\"task7.js\">function task7()</script>\n\t\t\n\t\t<h1>Task 8</h1>\n\t\t<input type=\"button\" value=\"Click here to run task 8\" onclick=\"task8()\">\n\t\t<script>\n\t\t\tfunction task8(){\n\t\t\tvar a = prompt(\"A = \");\n\t\t\tvar b = prompt (\"B = \");\n\t\t\t(+a + +b < 4) ? alert(\"low\") : alert (\"Many\")\n\t\t}\n\t\t</script>\n\n\t\t<h1>Task 9</h1>\n\t\t<input type=\"button\" value=\"Click here to run task 9\" onclick=\"task9()\">\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tfunction task9(){\n\t\t\t\t\tvar age = prompt(\"age is\")\n\t\t\t\t\tvar f = (14 <= +age && +age <= 90)\n\t\t\t\t\talert (f)\n\t\t\t\t\talert (14>= +age && +age>=90)\n\t\t\t\t\talert (!f)\n\t\t\t\t}\n\t\t\t</script>\n\t\t<h1>Task 10</h1>\n\t\t<input type=\"button\" value=\"Click here to run task 10 (in progress)\" onclick=\"task10()\">\n\t\t<script type=\"text/javascript\">\n\t\t\tfunction task10(){\n\t\t\t\talert(String(null)==\"null\")\n\t\t\t\talert(Number(\"200\")==\"200\")\n\t\t\t\talert(Boolean(\"1\")==true)\n\t\t\t\t}\n\n\t\t</script>\n\t\t\t<h1>Task 11</h1>\n\t\t\t<input type=\"button\" value=\"Click here to run task 11\" onclick=\"task11()\">\n\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tfunction task11(){\n\t\t\t\t\t\t/*for (var i=0;i<11;i++)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif (0 == i%2) {\n\t\t\t\t\t\t\t\talert(i)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t}*/\n\t\t\t\t\tvar i = 1\n\t\t\t\t\twhile (i){\n\t\t\t\t\t\tif(i%2 == 0) alert (i);\n\t\t\t\t\t\tif (i==10) break;\n\t\t\t\t\t\t++i;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t/*for (i=1;i<11;i++){\n\t\t\t\tif(i%2!=0) alert (i);\n\t\t\t}*/\n\t\t\t</script>\n<h1>Task 12</h1>\n<input type=\"button\" value=\"Click here to run task 12\", onclick=\"task12()\">\n<script type=\"text/javascript\">\n\tfunction task12(){\n\t\tvar textRecognition = prompt(\"Please enter text here\");\n\t\tvar st = String(textRecognition)\n\t\tvar nm = Number(textRecognition)\n\t\tvar typeOfData\n\t\t//alert (st)\n\t\t//alert (nm)\n\t\tif (st == st && isNaN(nm)) {\n\t\t\ttypeOfData = \"string\"\n\t\t\t}\n\t\telse typeOfData = \"number\"\n\t\t /*if (st != null && nm != null) {\n\t\t\ttypeOfData = \"number\"\n\t\t}\n\t\telse {typeOfData = \"null\"}*/\n\t\t\t\t\n\t\tswitch(typeOfData)\n\t\t{ \tcase \"number\":\n\t\t\talert (\"this is number\");\n\t\t\tbreak;\n\t\t\tcase \"null\":\n\t\t\talert(\"this is zero\");\n\t\t\tbreak;\n\t\t\tcase \"string\": \n\t\t\talert(\"this is string\");\n\t\t\tbreak;\n\t\t\tdefault:\n\t\t\talert(\"unknow input\");\n\t\t}\n\n\t}\n</script>\n\n\t\t</td>\n\t</tr>\n<table>\n\t<footer>\n    <div id=\"footer\"><br><br><br>Made by RD.<br><br><br></div>\n  \t</footer>\n</body>\n</html>",
 			"file": "Task5.html",
+			"file_size": 5031,
+			"file_write_time": 131715405845434541,
 			"settings":
 			{
-				"buffer_size": 4001,
+				"buffer_size": 4703,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -294,15 +305,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4001,
+						"buffer_size": 4703,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3855,
-								3855
+								4563,
+								4564
 							]
 						],
 						"settings":
@@ -310,7 +321,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2853.0,
+						"translation.y": 3708.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
