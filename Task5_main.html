@@ -18,7 +18,7 @@
    
   </style>
 	<title>
-		Tasks page ? wow!
+		List of completed JS tasks.
 	</title>
 </head>
 <body>
@@ -28,6 +28,7 @@
 		<tr>
 			<td>
 	<h1>Task 3</h1>
+	<div>Create script which show notification.(For ex.:Rabbit counter) </div>
 	<p id="preCount"></p>
 	<p id="afterCount"> </p>
 	<input type="button" value="Click here to run task3" onclick="task3()">
@@ -45,12 +46,14 @@
 	</script>
 
 	<h1>Task 4</h1>
+	<div>Verify behavior of defferent type values. Run external scipt.</div>
 	<input type="button" value="Click here to run task 4" onclick="task4()">
 	 <script src="task4.js">
 		function task4()
 	</script>
 
 	<h1>Task 5</h1>
+	<div>Create simple if/else script which ask a real name of JS. Run internal script.</div>
 	<input type="button" value="Click here to run task 5" onclick="task5()">
 
 	<script type="text/javascript">
@@ -67,6 +70,7 @@
 	</script>
 
 	<h1>Task 6</h1>
+	<div>Create scipt which returns: "1" - if positive value entered, "-1" - if negative, "0" - if zero. </div>
 	<input type="button" value="Click here to run task 6" onclick="task6()">
 
 	<script type="text/javascript">
@@ -84,8 +88,54 @@
 		}
 	}
 	</script>
+	<h1>Task 7</h1>
+	<div>Create script which read entered value and give you response based on input.</div>
+		<input type="button" value="Click here to run task 7" onclick="task7()">
+		<script src="task7.js">function task7()</script>
+		
+		<h1>Task 8</h1>
+		<div>Create script which return lowest value.</div>
+		<input type="button" value="Click here to run task 8" onclick="task8()">
+		<script>
+			function task8(){
+			var a = prompt("A = ");
+			var b = prompt ("B = ");
+			(+a + +b < 4) ? alert("low") : alert ("Many")
+		}
+		</script>
+		<h1>Task 9</h1>
+		<div>Create script which defined if value belong to defined interval or not. Also write reverse script.</div>
+		<input type="button" value="Click here to run task 9" onclick="task9()">
+			<script type="text/javascript">
+				function task9(){
+					var age = prompt("age is")
+					var f = (14 <= +age && +age <= 90)
+					alert (f)
+					alert (14>= +age && +age>=90)
+					alert (!f)
+				}
+			</script>
+		<h1>Task 10</h1>
+		<div>Verify equlity of types.</div>
+		<input type="button" value="Click here to run task 10" onclick="task10()">
+		<script type="text/javascript">
+			function task10(){
+				alert(String(null)=="null")
+				alert(Number("200")=="200")
+				alert(Boolean("1")==true)
+				}
+
+		</script>
 	<br>
-	<h1>Task 0.0</h1>
+	
+		
+<hr width="400" align="left">
+</td>
+
+		<td>
+			<img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png">
+			<h1>Task 0.0</h1>
+			<Div>Create any script with "switch".</Div>
 	<input type="button" value="Please click here to run task" onclick="task0()">
 	<script type="text/javascript">
 		function task0(){
@@ -105,51 +155,15 @@
 			}
 		}
 	</script>
-		
-
-</td>
-
-		<td>
-			<img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png">
+	<br><br><br><br><br><br>
+			<hr width="400" align="justify">
 					</td>
 
 		<td class="rightcol">
-		<h1>Task 7</h1>
-		<input type="button" value="Click here to run task 7" onclick="task7()">
-		<script src="task7.js">function task7()</script>
 		
-		<h1>Task 8</h1>
-		<input type="button" value="Click here to run task 8" onclick="task8()">
-		<script>
-			function task8(){
-			var a = prompt("A = ");
-			var b = prompt ("B = ");
-			(+a + +b < 4) ? alert("low") : alert ("Many")
-		}
-		</script>
-
-		<h1>Task 9</h1>
-		<input type="button" value="Click here to run task 9" onclick="task9()">
-			<script type="text/javascript">
-				function task9(){
-					var age = prompt("age is")
-					var f = (14 <= +age && +age <= 90)
-					alert (f)
-					alert (14>= +age && +age>=90)
-					alert (!f)
-				}
-			</script>
-		<h1>Task 10</h1>
-		<input type="button" value="Click here to run task 10" onclick="task10()">
-		<script type="text/javascript">
-			function task10(){
-				alert(String(null)=="null")
-				alert(Number("200")=="200")
-				alert(Boolean("1")==true)
-				}
-
-		</script>
+		
 			<h1>Task 11</h1>
+			<div> Create script which show even-numbers.</div>
 			<input type="button" value="Click here to run task 11" onclick="task11()">
 
 			<script type="text/javascript">
@@ -173,7 +187,8 @@
 			}*/
 			</script>
 <h1>Task 12</h1>
-<input type="button" value="Click here to run task 12", onclick="task12()">
+<Div>Create script which define type of entered value.</Div>
+<input type="button" value="Click here to run task 12" onclick="task12()">
 <script type="text/javascript">
 	function task12(){
 		var textRecognition = prompt("Please enter text here");
@@ -209,9 +224,124 @@
 
 </script>
 
-		</td>
+		<h1>Task 13</h1>
+		<div>Using "?" or "||", Write function, which return "true", if age>18, else asks confirmation and return it. </div>
+		<input type="button" value="Click here to run task 13.1" onclick="isAdult()">
+					<script type="text/javascript">
+						
+				function isAdult(age){
+					var age = prompt("enter your age")
+					return (+age>18) ?  true : confirm ("Parents allow?")
+						}
+			</script>
+		<h1>Task 14</h1>
+		<div>Create function which return lowest number</div>
+		<input type="button" value="Click here to run task 14" onclick="Min()">
+		<script type="text/javascript">
+				function Min(){			
+				var first = prompt("Number one")
+				var second = prompt("Number two")
+				return(+first > +second) ? alert("Minimal value is" + second) : alert("Minimal value is" + first)
+			}
+		</script>
+		<h1>Task15</h1>
+		<div>Write pow(x,n) function which return "x" in "n" degree. Function should request values. Also function shouldn`t accept only natural "n" values. </div>
+		<input type="button" value="Click here to run task 15" onclick="collectData()">
+			<script type="text/javascript">
+			function collectData(){
+				var value1 = prompt("please enter value")
+				var degree1 = prompt("please enter degree")
+				return (degree1%1==0) ? alert (pwer(value1,degree1)) : alert("try again")
+			}
+			function pwer(value1,degree1){
+				var rezul = value1;
+				for (degree1==degree1;degree1!=1;degree1--)
+				{
+					rezul *= value1						
+				}
+				return rezul
+				}
+		</script>
+			<h1>Task 16</h1>
+			<div>Create function which summurize numbers from 1 till "n".</div>
+			<input type="button" value="Click here to run task 16" onclick="summarize(5)">
+			<script type="text/javascript">
+				/*function task16(){
+					var n1 = prompt("enter N")
+					var rez1 = 0
+					for (var i=0;i<=n1;i++){
+					rez1=rez1+i
+					}
+					alert (rez1)
+					}
+					
+					function summarize(n1)
+					{	var rez2;
+						rez2 = ((1+n1)/2)*n1;
+						return alert(rez2);
+					}
 
+					/*var x = 2
+					var n = 3
+					basic = x
+						do{
+						basic*=x
+						n--}
+						while (n!=1)
+							alert (basic)
+				}*/
+			</script>
+			<h1>Task 17</h1>
+			<div>Create function which will return factorial of the nubmer.(+Fibonaci)*****</div>
+			<input type="button" value="Factorial" onclick="alert(fact(4))">
+			<input type="button" value="Fibonachi" onclick="alert(fibon(3))">
+			<script type="text/javascript">
+				/*function task17(i){
+					var rezult = i
+					for (i=i-1;i!=1;i--)
+					{
+						rezult=rezult*i
+					}
+					alert(rezult)
+				}*/
+				
+				function fact(e){
+
+				 if(e!=1)
+					{
+					return e*fact(--e);
+					}
+					return 1;
+					}
 		
+			</script>
+			<script type="text/javascript">
+				function fibon(n) {
+					var a=1,b=1;
+				  for(var i = 3;i<=n;i++)
+				  {
+				  	var rez=a+b
+				  	a=b
+				  	b=rez
+				  	
+				  }
+				  return rez
+				}
+			</script>
+
+			<h1>Task 18</script>
+			<div>TBD</div>
+			<input type="button" vaue="TBD" onclick="task18()">
+			<script type="text/javascript">
+				function task18(){
+
+				}
+			</script>
+
+
+
+<hr width="400">
+		</td>
 	</tr>
 <table>
 	<footer>
