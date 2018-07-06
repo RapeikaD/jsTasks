@@ -12,6 +12,12 @@ describe("pow", function() {
 			  it("test4", function(){
 			  	assert.equal(pow(4,1.5), "NaN");
 			  });
+			  it("Любое число кроме 0 в 0 степени равно 1",function(){
+			  	assert.equal(pow(17,0), 1)
+			  })
+			  it("0 в 0 степени = Nan", function(){
+			  	assert.equal(pow(0,0), "NaN")
+			  })
 			  
 
 			});

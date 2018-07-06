@@ -4,12 +4,180 @@
 		"selected_items":
 		[
 			[
-				"r",
-				"return"
+				"input",
+				"input"
+			],
+			[
+				"string",
+				"string"
+			],
+			[
+				"typeOF",
+				"typeof"
+			],
+			[
+				"Mas",
+				"Massive1"
+			],
+			[
+				"last",
+				"lastElem"
+			],
+			[
+				"mas",
+				"massives"
+			],
+			[
+				"new",
+				"newOne"
+			],
+			[
+				"ele",
+				"getElementById"
+			],
+			[
+				"las",
+				"lastElem"
 			],
 			[
 				"s",
-				"sum"
+				"ship"
+			],
+			[
+				"sal",
+				"salary2"
+			],
+			[
+				"top",
+				"topSalary"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"brea",
+				"break"
+			],
+			[
+				"total",
+				"totalCost"
+			],
+			[
+				"is",
+				"isEmpty"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"nm",
+				"name"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"str",
+				"string2"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"char",
+				"charAt"
+			],
+			[
+				"firs",
+				"firstCharacter"
+			],
+			[
+				"re",
+				"result2"
+			],
+			[
+				"S",
+				"String2Length"
+			],
+			[
+				"strgi",
+				"string2"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"string2",
+				"String2Length"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"time",
+				"timeV"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"limi",
+				"limit"
+			],
+			[
+				"ra",
+				"randomNumber"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"prop",
+				"prompt"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"pa",
+				"parseFloat"
+			],
+			[
+				"fib",
+				"fibon"
+			],
+			[
+				"n",
+				"number"
+			],
+			[
+				"valu",
+				"value1"
+			],
+			[
+				"r",
+				"return"
 			],
 			[
 				"type",
@@ -96,14 +264,6 @@
 				"part2"
 			],
 			[
-				"par",
-				"part1"
-			],
-			[
-				"pa",
-				"part1"
-			],
-			[
 				"a",
 				"armoe"
 			],
@@ -128,19 +288,19 @@
 	"buffers":
 	[
 		{
-			"file": "sand.html",
+			"file": "Task19.html",
 			"settings":
 			{
-				"buffer_size": 677,
+				"buffer_size": 1411,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "SandJS.js",
+			"file": "t19.js",
 			"settings":
 			{
-				"buffer_size": 375,
+				"buffer_size": 924,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -149,7 +309,7 @@
 			"file": "Task5_main.html",
 			"settings":
 			{
-				"buffer_size": 5390,
+				"buffer_size": 23785,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -167,6 +327,26 @@
 		"selected_items":
 		[
 			[
+				"syntax: ",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax: ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"br",
 				"View In Browser"
 			]
@@ -175,9 +355,10 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 157.0,
 		"history":
 		[
+			"view.run_command(\"htmlprettify\")"
 		]
 	},
 	"distraction_free":
@@ -191,13 +372,14 @@
 	},
 	"file_history":
 	[
+		"/D/JS/Merk.html",
+		"/D/JS/Task4.js",
+		"/D/JS/task7.js",
+		"/D/JS/firstCSSever.css",
 		"/D/JS/Tasks1-3.html",
 		"/D/JS/No way.html",
 		"/D/JS/Task5.html",
-		"/D/JS/firstCSSever.css",
-		"/D/JS/task7.js",
 		"/D/JS/task5.js",
-		"/D/JS/Task4.js",
 		"/D/JS/Task4.html",
 		"/D/JS/Adaptation.js",
 		"/D/JS/SandJS",
@@ -208,7 +390,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -222,6 +404,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"typeof",
+			"total",
+			"Nan",
+			"rez2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -244,19 +430,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "sand.html",
+					"file": "Task19.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 677,
+						"buffer_size": 1411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								69,
-								69
+								660,
+								660
 							]
 						],
 						"settings":
@@ -272,19 +458,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "SandJS.js",
+					"file": "t19.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 375,
+						"buffer_size": 924,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								491,
+								491
 							]
 						],
 						"settings":
@@ -304,15 +490,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5390,
+						"buffer_size": 23785,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4973,
-								4973
+								23287,
+								23287
 							]
 						],
 						"settings":
@@ -321,7 +507,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3672.0,
+						"translation.y": 10692.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -332,7 +518,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -373,7 +559,7 @@
 	"project": "test2.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

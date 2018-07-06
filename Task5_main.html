@@ -1,260 +1,242 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
+
 <head>
-	<link rel="stylesheet" type="text/css" href="firstCSSever.css">
-  <style>
-   table.text  {
-    width: 70%; /* Ширина таблицы */
-    border-spacing: 0; /* Расстояние между ячейками */
-   }
-   table.text td {
-    width: 50%; /* Ширина ячеек */
-    vertical-align: top; /* Выравнивание по верхнему краю */
-   }
-   td.rightcol { /* Правая ячейка */ 
-    text-align: left; /* Выравнивание по правому краю */
-   }
-   
-  </style>
-	<title>
-		List of completed JS tasks.
-	</title>
+    <link rel="stylesheet" type="text/css" href="firstCSSever.css">
+    <style>
+    table.text {
+        width: 70%;     /* Ширина таблицы */
+        border-spacing: 0;    /* Расстояние между ячейками */
+    }
+
+    table.text td {
+        width: 50%;      /* Ширина ячеек */
+        vertical-align: top;      /* Выравнивание по верхнему краю */
+    }
+
+    td.rightcol {     /* Правая ячейка */
+        text-align: left;     /* Выравнивание по правому краю */
+    }
+    </style>
+    <title>
+        List of completed JS tasks.
+    </title>
 </head>
+
 <body>
-	
-	
-	<table class="text">
-		<tr>
-			<td>
-	<h1>Task 3</h1>
-	<div>Create script which show notification.(For ex.:Rabbit counter) </div>
-	<p id="preCount"></p>
-	<p id="afterCount"> </p>
-	<input type="button" value="Click here to run task3" onclick="task3()">
-	<script defer="true">
-	function task3()
-	{		
-	var preCount = document.getElementById("preCount")
-	preCount.innerText = 'Rabit count:'
-	alert('Rabbit1')
-	alert('Rabbit2')
-	alert('Rabbit3')
-	var afterCount = document.getElementById("afterCount")
-	afterCount.innerText = 'No more rabits!'
-	}
-	</script>
-
-	<h1>Task 4</h1>
-	<div>Verify behavior of defferent type values. Run external scipt.</div>
-	<input type="button" value="Click here to run task 4" onclick="task4()">
-	 <script src="task4.js">
-		function task4()
-	</script>
-
-	<h1>Task 5</h1>
-	<div>Create simple if/else script which ask a real name of JS. Run internal script.</div>
-	<input type="button" value="Click here to run task 5" onclick="task5()">
-
-	<script type="text/javascript">
-		function task5 (){
-		var q1 = prompt ('That`s the official name of javascript')		
-		if (q1 != "EcmaScript")
-		{
-			alert ('Don`t know? \nit is "EcmaScript"!')
-		}
-		else {
-			alert('correct!')
-		}
-	}
-	</script>
-
-	<h1>Task 6</h1>
-	<div>Create scipt which returns: "1" - if positive value entered, "-1" - if negative, "0" - if zero. </div>
-	<input type="button" value="Click here to run task 6" onclick="task6()">
-
-	<script type="text/javascript">
-		function task6 (){
-		var q2 = prompt("Please enter any value", "right here")	
-		if (q2 == 0)
-		{
-			alert ("0");
-		}
-		else if (q2 > 0) {
-			alert ("1");
-		}	
-		else {
-		 alert("-1")
-		}
-	}
-	</script>
-	<h1>Task 7</h1>
-	<div>Create script which read entered value and give you response based on input.</div>
-		<input type="button" value="Click here to run task 7" onclick="task7()">
-		<script src="task7.js">function task7()</script>
-		
-		<h1>Task 8</h1>
-		<div>Create script which return lowest value.</div>
-		<input type="button" value="Click here to run task 8" onclick="task8()">
-		<script>
-			function task8(){
-			var a = prompt("A = ");
-			var b = prompt ("B = ");
-			(+a + +b < 4) ? alert("low") : alert ("Many")
-		}
-		</script>
-		<h1>Task 9</h1>
-		<div>Create script which defined if value belong to defined interval or not. Also write reverse script.</div>
-		<input type="button" value="Click here to run task 9" onclick="task9()">
-			<script type="text/javascript">
-				function task9(){
-					var age = prompt("age is")
-					var f = (14 <= +age && +age <= 90)
-					alert (f)
-					alert (14>= +age && +age>=90)
-					alert (!f)
-				}
-			</script>
-		<h1>Task 10</h1>
-		<div>Verify equlity of types.</div>
-		<input type="button" value="Click here to run task 10" onclick="task10()">
-		<script type="text/javascript">
-			function task10(){
-				alert(String(null)=="null")
-				alert(Number("200")=="200")
-				alert(Boolean("1")==true)
-				}
-
-		</script>
-	<br>
-	
-		
-<hr width="400" align="left">
-</td>
-
-		<td>
-			<img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png">
-			<h1>Task 0.0</h1>
-			<Div>Create any script with "switch".</Div>
-	<input type="button" value="Please click here to run task" onclick="task0()">
-	<script type="text/javascript">
-		function task0(){
-			var entrance = prompt ("type any primal element")
-			switch (entrance){
-				case "fire":
-				alert("hot");
-				break;
-				case "water":
-				alert ('wet');
-				break;
-				case "earth":
-				alert("durable");
-				break;
-				default:
-				alert ("probably this is a water");
-			}
-		}
-	</script>
-	<br><br><br><br><br><br>
-			<hr width="400" align="justify">
-					</td>
-
-		<td class="rightcol">
-		
-		
-			<h1>Task 11</h1>
-			<div> Create script which show even-numbers.</div>
-			<input type="button" value="Click here to run task 11" onclick="task11()">
-
-			<script type="text/javascript">
-				function task11(){
-						/*for (var i=0;i<11;i++)
+    <table class="text">
+        <tr>
+            <td>
+                <h1>Task 3</h1>
+                <div>Create script which show notification.(For ex.:Rabbit counter) </div>
+                <p id="preCount"></p>
+                <p id="afterCount"> </p>
+                <input type="button" value="Click here to run task3" onclick="task3()">
+                <script defer="true">
+                function task3() {
+                    var preCount = document.getElementById("preCount")
+                    preCount.innerText = 'Rabit count:'
+                    alert('Rabbit1')
+                    alert('Rabbit2')
+                    alert('Rabbit3')
+                    var afterCount = document.getElementById("afterCount")
+                    afterCount.innerText = 'No more rabits!'
+                }
+                </script>
+                <h1>Task 4</h1>
+                <div>Verify behavior of defferent type values. Run external scipt.</div>
+                <input type="button" value="Click here to run task 4" onclick="task4()">
+                <script src="task4.js">
+                function task4()
+                </script>
+                <h1>Task 5</h1>
+                <div>Create simple if/else script which ask a real name of JS. Run internal script.</div>
+                <input type="button" value="Click here to run task 5" onclick="task5()">
+                <script type="text/javascript">
+                function task5() {
+                    var q1 = prompt('That`s the official name of javascript')
+                    if (q1 != "EcmaScript") {
+                        alert('Don`t know? \nit is "EcmaScript"!')
+                    } else {
+                        alert('correct!')
+                    }
+                }
+                </script>
+                <h1>Task 6</h1>
+                <div>Create scipt which returns: "1" - if positive value entered, "-1" - if negative, "0" - if zero. </div>
+                <input type="button" value="Click here to run task 6" onclick="task6()">
+                <script type="text/javascript">
+                function task6() {
+                    var q2 = prompt("Please enter any value", "right here")
+                    if (q2 == 0) {
+                        alert("0");
+                    } else if (q2 > 0) {
+                        alert("1");
+                    } else {
+                        alert("-1")
+                    }
+                }
+                </script>
+                <h1>Task 7</h1>
+                <div>Create script which read entered value and give you response based on input.</div>
+                <input type="button" value="Click here to run task 7" onclick="task7()">
+                <script src="task7.js">
+                function task7()
+                </script>
+                <h1>Task 8</h1>
+                <div>Create script which return lowest value.</div>
+                <input type="button" value="Click here to run task 8" onclick="task8()">
+                <script>
+                function task8() {
+                    var a = prompt("A = ");
+                    var b = prompt("B = ");
+                    (+a + +b < 4) ? alert("low"): alert("Many")
+                }
+                </script>
+                <h1>Task 9</h1>
+                <div>Create script which defined if value belong to defined interval or not. Also write reverse script.</div>
+                <input type="button" value="Click here to run task 9" onclick="task9()">
+                <script type="text/javascript">
+                function task9() {
+                    var age = prompt("age is")
+                    var f = (14 <= +age && +age <= 90)
+                    alert(f)
+                    alert(14 >= +age && +age >= 90)
+                    alert(!f)
+                }
+                </script>
+                <h1>Task 10</h1>
+                <div>Verify equlity of types.</div>
+                <input type="button" value="Click here to run task 10" onclick="task10()">
+                <script type="text/javascript">
+                function task10() {
+                    alert(String(null) == "null")
+                    alert(Number("200") == "200")
+                    alert(Boolean("1") == true)
+                }
+                </script>
+                <h1>Task 11</h1>
+                <div> Create script which show even-numbers.</div>
+                <input type="button" value="Click here to run task 11" onclick="task11()">
+                <script type="text/javascript">
+                function task11() {
+                    /*for (var i=0;i<11;i++)
 						{
 							if (0 == i%2) {
 								alert(i)
 							}
 						}
 				}*/
-					var i = 1
-					while (i){
-						if(i%2 == 0) alert (i);
-						if (i==10) break;
-						++i;
-						}
-					}
-			/*for (i=1;i<11;i++){
-				if(i%2!=0) alert (i);
-			}*/
-			</script>
-<h1>Task 12</h1>
-<Div>Create script which define type of entered value.</Div>
-<input type="button" value="Click here to run task 12" onclick="task12()">
-<script type="text/javascript">
-	function task12(){
-		var textRecognition = prompt("Please enter text here");
-		var st = String(textRecognition)
-		var nm = Number(textRecognition)
-		var typeOfData
-		//alert (st)
-		//alert (nm)
-		if (st == st && isNaN(nm)) {
-			typeOfData = "string"
-			}
-		else typeOfData = "number"
-		 /*if (st != null && nm != null) {
+                    var i = 1;
+
+                    while (i) {
+                        if (i % 2 == 0) alert(i);
+                        if (i == 10) break;
+                        ++i;
+                    }
+                }
+                /*for (i=1;i<11;i++){
+                	if(i%2!=0) alert (i);
+                }*/
+                </script>
+                <h1>Task 12</h1>
+                <Div>Create script which define type of entered value.</Div>
+                <input type="button" value="Click here to run task 12" onclick="task12()">
+                <script type="text/javascript">
+                function task12() {
+                    var textRecognition = prompt("Please enter text here");
+                    var st = String(textRecognition)
+                    var nm = Number(textRecognition)
+                    var typeOfData
+                    //alert (st)
+                    //alert (nm)
+                    if (st == st && isNaN(nm)) {
+                        typeOfData = "string"
+                    } else typeOfData = "number"
+                    /*if (st != null && nm != null) {
 			typeOfData = "number"
 		}
 		else {typeOfData = "null"}*/
-				
-		switch(typeOfData)
-		{ 	case "number":
-			alert ("this is number");
-			break;
-			case "null":
-			alert("this is zero");
-			break;
-			case "string": 
-			alert("this is string");
-			break;
-			default:
-			alert("unknow input");
+                    switch (typeOfData) {
+                        case "number":
+                            alert("this is number");
+                            break;
+                        case "null":
+                            alert("this is zero");
+                            break;
+                        case "string":
+                            alert("this is string");
+                            break;
+                        default:
+                            alert("unknow input");
+                    }
+
+                }
+                </script>
+                <h1>Task 13</h1>
+                <div>Using "?" or "||", Write function, which return "true", if age>18, else asks confirmation and return it. </div>
+                <input type="button" value="Click here to run task 13.1" onclick="isAdult()">
+                <script type="text/javascript">
+                function isAdult(age) {
+                    var age = prompt("enter your age")
+                    return (+age > 18) ? true : confirm("Parents allow?")
+                }
+                </script>
+                <br>
+                <hr width="400" align="left">
+            </td>
+            <td>
+                <img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png ">
+			<h1>Task 11.1</h1>
+			<Div>Create any script with "switch".</Div>
+	<input type="button" value="Please click here to run task" onclick="task0()">
+	<script type="text/javascript">
+		function task0() {
+			var entrance = prompt ("type any primal element")
+			switch (entrance){
+				case "fire ":
+				alert("hot ");
+				break;
+				case "water ":
+				alert ('wet');
+				break;
+				case "earth ":
+				alert("durable ");
+				break;
+				default:
+				alert ("probably this is a water ");
+			}
 		}
+	</script>
+	<br><br><br><br><br><br>
+			<hr width="400 " align="justify ">
+					</td>
 
-	}
-
-</script>
-
-		<h1>Task 13</h1>
-		<div>Using "?" or "||", Write function, which return "true", if age>18, else asks confirmation and return it. </div>
-		<input type="button" value="Click here to run task 13.1" onclick="isAdult()">
-					<script type="text/javascript">
-						
-				function isAdult(age){
-					var age = prompt("enter your age")
-					return (+age>18) ?  true : confirm ("Parents allow?")
-						}
-			</script>
+		<td class="rightcol ">
+					
 		<h1>Task 14</h1>
 		<div>Create function which return lowest number</div>
-		<input type="button" value="Click here to run task 14" onclick="Min()">
+		<input type="button" value="Click here to run task 14 " onclick="Min()">
 		<script type="text/javascript">
-				function Min(){			
-				var first = prompt("Number one")
-				var second = prompt("Number two")
-				return(+first > +second) ? alert("Minimal value is" + second) : alert("Minimal value is" + first)
+				function Min() {			
+				var first = prompt("Number one ")
+				var second = prompt("Number two ")
+				return(+first > +second) ? alert("Minimal value is " + second) : alert("Minimal value is " + first)
 			}
 		</script>
 		<h1>Task15</h1>
-		<div>Write pow(x,n) function which return "x" in "n" degree. Function should request values. Also function shouldn`t accept only natural "n" values. </div>
-		<input type="button" value="Click here to run task 15" onclick="collectData()">
+		<div>Write pow(x,n) function which return "x " in "n " degree. Function should request values. Also function shouldn`t accept only natural "n " values. </div>
+		<input type="button" value="Click here to run task 15 " onclick="collectData() ">
 			<script type="text/javascript">
-			function collectData(){
-				var value1 = prompt("please enter value")
-				var degree1 = prompt("please enter degree")
-				return (degree1%1==0) ? alert (pwer(value1,degree1)) : alert("try again")
+			function collectData() {
+				var value1 = prompt("please enter value ")
+				var degree1 = prompt("please enter degree ")
+				return (degree1%1==0) ? alert (pwer(value1,degree1)) : alert("try again ")
 			}
-			function pwer(value1,degree1){
+			function pwer(value1,degree1) {
 				var rezul = value1;
+
 				for (degree1==degree1;degree1!=1;degree1--)
 				{
 					rezul *= value1						
@@ -263,11 +245,11 @@
 				}
 		</script>
 			<h1>Task 16</h1>
-			<div>Create function which summurize numbers from 1 till "n".</div>
-			<input type="button" value="Click here to run task 16" onclick="summarize(5)">
+			<div>Create function which summurize numbers from 1 till "n ".</div>
+			<input type="button" value="Click here to run task 16 " onclick="summarize(5)">
 			<script type="text/javascript">
 				/*function task16(){
-					var n1 = prompt("enter N")
+					var n1 = prompt("enter N ")
 					var rez1 = 0
 					for (var i=0;i<=n1;i++){
 					rez1=rez1+i
@@ -293,8 +275,8 @@
 			</script>
 			<h1>Task 17</h1>
 			<div>Create function which will return factorial of the nubmer.(+Fibonaci)*****</div>
-			<input type="button" value="Factorial" onclick="alert(fact(4))">
-			<input type="button" value="Fibonachi" onclick="alert(fibon(3))">
+			<input type="button" value="Factorial " onclick="alert( fact(4) ) ">
+			<input type="button" value="Fibonachi " onclick="alert( fibon(3) ) ">
 			<script type="text/javascript">
 				/*function task17(i){
 					var rezult = i
@@ -304,10 +286,9 @@
 					}
 					alert(rezult)
 				}*/
-				
 				function fact(e){
 
-				 if(e!=1)
+				 if(e != 1)
 					{
 					return e*fact(--e);
 					}
@@ -316,33 +297,361 @@
 		
 			</script>
 			<script type="text/javascript">
-				function fibon(n) {
-					var a=1,b=1;
-				  for(var i = 3;i<=n;i++)
+				var fibon = function fibo(n) {
+				var a = 1,b = 1;
+
+				  for(var i = 3; i <= n; i++)
 				  {
-				  	var rez=a+b
-				  	a=b
-				  	b=rez
-				  	
-				  }
-				  return rez
+				  	var rez = a+b;
+				  	a = b;
+				  	b = rez;
+				    }
+				  return rez;
 				}
 			</script>
+			<h1>Task 18</h1>
+<div>Introduction to methods and properties.</div>
+<input type="button" value="Click here to run task 18" onclick="task18() ">
+<script type="text/javascript">
+var task18 = function tryMethods() {
+    alert("Any string ".length)
+    var time = ("this text should be ".toUpperCase())
+    alert(time + " (getting bigger) ")
+    alert(time.toLowerCase() + " (back to low) ")
+}
+</script>
+<H1>Task 19</H1>
+<div>Create tests for POW function:</div>
+<div>1. Check if any number in 0 degree = 1. (except zero)</div>
+<div>2. Check if 0 in 0 degree equal to <b>NaN</b></div>
+<div>3. Check if number in -n degree equal <b>NaN</b></div>
+<div>4. Check if number in fractional degree equal <b>NaN</b></div>
+<H3>See results in t19.js</H3>
 
-			<h1>Task 18</script>
-			<div>TBD</div>
-			<input type="button" vaue="TBD" onclick="task18()">
-			<script type="text/javascript">
-				function task18(){
+<h1>Task 20</h1>
+<div> 1. Create function which accept 2 number and calculate their sum.</div>
+<div> 2. Create function which return decimal part of the number.</div>
+<div> 3. Create function which return random value in range from 0 to max</div>
+<div> 4. Create function which return random value in range from min to max. (In addition, make it whole) </div>
+<input type="button" value="Click here to run task 20.1" onclick="task20n1()">
+<input type="button" value="Click here to run task 20.2" onclick="task20n2()">
+<input type="button" value="Click here to run task 20.3" onclick="task20n3()">
+<input type="button" value="Click here to run task 20.4" onclick="task20n4()">
+<script type="text/javascript">
+	function task20n1()	{
+		//var t = (Math.random()*10)
+		//alert (isFinite(parseFloat(t)))
+		//alert (isFinite(parseInt(t)))
+		//alert (Math.floor(parseFloat(t)))
+		//alert (Math.ceil(parseInt(t)))
+			//alert (Math.round(t))
+			//alert (Math.floor(t))
+			//alert (Math.ceil(t))
+			//alert (~~t)
+			//alert (t*t ^0)
+var nOne = Number(prompt("Number one is"))
+var nTwo = Number(prompt("Number two is"))
+var SumRezult = (nOne + nTwo)
+alert (SumRezult)
+		}
+	function task20n2()	{
+		var decimal = (prompt("Enter fractional value"))
+		//var length2 = decimal.indexOf(".") 
+		var length = decimal.length-1-decimal.indexOf(".") 
+		var decimalPart =  ((decimal %1).toFixed(length))
+		alert (decimalPart)
+	}	
+	function task20n3(){
+		var limit = prompt ("Enter max value")
+		var randomNumber = Math.random()*limit 
+		alert (randomNumber.toFixed(2))
+	}
+	function task20n4(){
+		var limitMax = Number (prompt ("Enter max value"))
+		var limitMin = Number (prompt ("Enter min value"))
+		var randomNumber = limitMin + Math.random()*(limitMax-limitMin) 
+		alert (randomNumber.toFixed(0))
+	}
+</script>
+<h1>Task 21</h1>
+<div>1. Create script which find all starting positions of substring.(fill both fields)</div><br>
+<div>2. Create script which change first letter to Uppercase. (fill only first field)</div>
+<div>3. Create script which return true if "viagra" or "xxx" strings are exists in entered string, and false if not. It should be not register-sensitive. (fill only first field)</div>
+<div>4. Create script which truncate string if it`s exceed limit. (field 1 for string, field 2 for max limit)</div>
+<div>5. Create script which select only number from currency string. (for ex: $10 -> 10.)</div>
+<input type="text" name="String 1" size="30" maxlength="30" id="input1"/>
+<input type="text" name="String 2" size="30" maxlength="30" id="input2"/><br>
+<input type="button" value="Enter" onclick="chr()"><br>
+<div>Substring positions:</div>
+<span id="result"></span>
 
-				}
-			</script>
+<input type="button" value="Task21.2" onclick="task21n2()">
+<span id="result2"></span>
 
+<input type="button" value="Task21.3" onclick="task21n3()">
+<span id="result3"></span>
+
+<input type="button" value="Task21.4" onclick="task21n4()">
+<span id="result4"></span>
+
+<input type="button" value="Task21.5" onclick="task21n5()">
+<span id="result5"></span>
+
+<script type="text/javascript">
+		var chr = function task21(){
+		//alert (" \b , \f, \r , \t , \u2384 Aint	\\ ")
+		//var position = string1.charAt(1)
+		//return (string1.indexOf('a'))
+		var string1 = document.getElementById('input1').value
+		var string2 = document.getElementById('input2').value
+		document.getElementById('result').innerHTML = ''
+		document.getElementById('result2').innerHTML = ''
+		//var string1 = prompt("type string 1")
+		//var string2 = prompt("type string 2")
+		var String2Length = string2.length
+		var here = 0;
+		if (string1 == '' || string2 == '')	return alert ("Please enter all required values!")
+		if ((string1.indexOf(string2,here))== -1) return alert ("Sorry, sub string is not found!")
+		while ((string1.indexOf(string2,here))!= -1) {
+			document.getElementById('result').innerHTML += ((string1.indexOf(string2,here)))
+			here = String2Length + (string1.indexOf(string2,here))
+
+			if ((string1.indexOf(string2,here))!= -1) {
+				document.getElementById('result').innerHTML += ","}
+			else {
+				document.getElementById('result').innerHTML += "."}	
+			}
+		return //document.getElementById('result2').innerHTML+= "\n" + substring()
+		//return "width" [1]
+		//return "Информация".toUpperCase()
+		//return "find something in here".indexOf('in',2)
+		//return "find something in here".lastIndexOf ('in')
+		//return position
+		}
+		var task21n2 = function() {
+			var string1 = document.getElementById('input1').value
+		if (string1 == '') return {}
+			var firstCharacter = string1.charAt(0)
+			var restString = string1.substr(1,string1.length)
+		document.getElementById('result2').innerHTML = firstCharacter.toUpperCase() + restString
+		}
+
+		var task21n3 = function() {
+			var string1 = (document.getElementById ('input1').value).toLowerCase()
+			if (string1.indexOf("viagra",0) != -1 || string1.indexOf("xxx",0) != -1) {
+				document.getElementById('result3').innerHTML = "true"}
+				else return document.getElementById('result3').innerHTML = "false"
+		} 
+
+		var task21n4 = function(){
+		var string1 = (document.getElementById ('input1').value)
+		var MaxLength = (document.getElementById ('input2').value)
+		if (string1.length > +MaxLength) { 
+			var newString = string1.substr(0,MaxLength - 3) +'...'
+			document.getElementById('result4').innerHTML = newString
+		}
+		else {
+			document.getElementById('result4').innerHTML = string1
+		}
+		}
+		var task21n5 = function(){
+			var string1 = (document.getElementById ('input1').value)
+			var fullString = string1.length
+			document.getElementById('result5').innerHTML = string1.substr(1,fullString)
+		}
+	</script>
+
+<h1>Task 22</h1>
+<div>Do following:</div>
+<div>1. Create blank object.</div>
+<div>2. Add properties with values.</div>
+<div>3. Change property.</div>
+<div>4. Remove property.</div>
+
+<input type="button" value="Click Here to run Task 22" onclick="task22()">
+<span id ='ObjectData'></span>
+<script type="text/javascript">
+		
+		function task22(){
+		var tree = {}
+		tree.size = 20
+		tree.name = "Astra"
+		tree['age'] = 10	 
+		tree.color = "Green"
+		var any = 'size'
+		tree.branch = { height:20, weight:30, age:10} //another way
+		document.getElementById('ObjectData').innerHTML = ("Size of " + tree.name + "is " + tree.size + " meters. ")
+		document.getElementById('ObjectData').innerHTML = tree[any]
+		tree.name = " Jeweline"
+		document.getElementById('ObjectData').innerHTML = tree.branch.age + tree.name
+		delete tree.color
+		//if ("color" in tree) {document.getElementById('ObjectData').innerHTML = "Yes"} 
+		//document.getElementById('ObjectData').innerHTML += (tree.color)
+		for (item in tree)
+			document.getElementById('ObjectData').innerHTML += item
+		}
+</script>
+
+<h1>Task 23</h1>
+<div>1. Create script which define if object is empty.</div>
+<div>2. Create script which summurize all properties, if there are no properties results hould be 0.</div>
+<div>3. Create script which show name of the employee with highest salary.</div>
+<div>4. Create script which multiply all numeric properties by 2 and return Object.</div>
+
+<input type="button" value="Click Here to run Task 23.1" onclick="task23()">
+<input type="button" value="Click Here to run Task 23.2" onclick="task23n2()">
+<input type="button" value="Click Here to run Task 23.3" onclick="task23n3()">
+<input type="button" value="Click Here to run Task 23.4" onclick="task23n4()">
+<br><span id ='isEmpty'></span>
+
+<script type="text/javascript">
+function task23() {
+	var house = {}//floor: 20, room:2}
+	//document.getElementById('isEmpty').innerHTML = house
+	for (var item in house){
+		return document.getElementById('isEmpty').innerHTML = false
+	}
+		return document.getElementById('isEmpty').innerHTML = true
+}
+
+function task23n2(){
+	var shop = {lime:100, cookies:80}
+	shop.chicken = 200
+	shop.bread = 50
+	shop.apple = 90
+	var totalCost = 0
+	//var shop = {}
+	for (item in shop) {
+ 	totalCost += shop[item]
+ 	}
+	document.getElementById('isEmpty').innerHTML = totalCost
+}
+
+function task23n3(){
+	var salary1 = 0
+	var salary2 = 0
+	var topSalary = "There are no employees"
+	var name = "There are no employees"
+	var company = {sam:100, denis:90, Rie: 73, John: 32, Ivy:170, Jinny:197}
+	for (item in company){
+		salary1 = company[item]
+		if(salary1 < salary2) {
+			topSalary = salary2
+			salary2 = company[item]
+			name = item
+		}
+		else {
+			topSalary = salary1
+			salary2 = salary1
+			name = item
+		}
+		//alert (topSalary)
+		}
+	document.getElementById('isEmpty').innerHTML = "Most valuable employee is " + item + ". Her salary is: " + topSalary
+}
+
+function task23n4() {
+var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500 }
+	for (item in ship) {
+		if (typeof (ship[item])!= 'string')
+		ship[item] *= 2
+		document.getElementById('isEmpty').innerHTML += "\n" + item + ": " + ship[item]
+	}
+	}	
+
+</script>
+
+<h1>Task 24</h1>
+<div>Do following:</div>
+<div>1. Write script which return last element of array.</div>
+<div>2. Write script which add at the and of array "Computer" value.(fill text box).</div>
+<div>3. Write script which add record to the end of array, then replace penultimate value, then remove firstm then add 2 value to the begining of the array.</div>
+<div>4. Write script which return random value from array.</div>
+
+<input type="text" name="Massive1" size="30" maxlength="30" id="massive1"/>
+<input type="text" name="Massive2" size="30" maxlength="30" id="massive2"/>
+<input type="button" value ="Click here to run tasks 24.1" onclick="task24n1()">
+<input type="button" value ="Click here to run tasks 24.2" onclick="task24n2()">
+<input type="button" value ="Click here to run tasks 24.3" onclick="task24n3()">
+<input type="button" value ="Click here to run tasks 24.4" onclick="task24n4()">
+<input type="button" value ="Click here to run tasks 24.5" onclick="task24n5()">
+
+<br><span id="massives"></span>
+<script type="text/javascript">
+	function task24n1() {
+	var carModels = ['Audi', 'Opel', 'Citroen', 'Hundai', 'Lexus', 'Mazda', true, 1, { plane: 'boeng'}, 'Last item']
+	var mas = new Array('one', 'two') //alternative way to create array
+	var mas2 = new Array(4)//this is mass with 2 items inside, not with number "2"!
+	var lastElem = carModels.length-1
+	document.getElementById('massives').innerHTML = carModels[lastElem]
+	//alert (mas + mas2)
+	//carModels.pop()//object boeng was removed
+	//carModels.push('Nissan', "Mercedes") //2 records was added to the end of the massive
+	//alert (carModels + carModels.length)
+	//alert (carModels.shift()) //remove first elemnt and return it
+	//alert (carModels.unshift('Audi8', 'Audi 100')) //add elemts to begining of the massive
+	//alert (carModels)
+	}
+	function task24n2() {
+		var carModels = ['Audi', 'Opel', 'Citroen', 'Hundai', 'Lexus', 'Mazda', 'Last item']
+		var newOne = document.getElementById('massive1').value
+		carModels.push(newOne)
+		var lastElem = carModels.length-1
+		document.getElementById('massives').innerHTML = "Now last element is \"" + carModels[lastElem] + "\""
+	}
+	function task24n3() {
+		var music = ['Джаз',' Блюз']
+		document.getElementById('massives').innerHTML += music + "<br/>"
+		music.push(' Рок-н-Ролл')
+		document.getElementById('massives').innerHTML += music + "<br/>"
+		var prelast = music.length-2
+		music[prelast] = ' Классика'
+		document.getElementById('massives').innerHTML += music + "<br/>"
+		alert (music.shift())
+		document.getElementById('massives').innerHTML += music + "<br/>"
+		music.unshift(' Реп',' Регги')
+		document.getElementById('massives').innerHTML += music + "<br/>"	
+	}
+	function task24n4() {
+		var carModels = ['Audi', 'Opel', 'Citroen', 'Hundai', 'Lexus', 'Mazda', 'Last item']
+		var randomA = (Math.random() *(carModels.length - 1))
+		document.getElementById('massives').innerHTML = carModels[Math.round(randomA)]
+	}
+	function task24n5() {
+		var input = []
+	  	var time = 0
+	  	document.getElementById('massives').innerHTML = ''
+	  	//alert(0 == null)
+	  	//alert(Number('asd'))
+		for (var i = 0 ;(time !== '') && (time !== null) && (!isNaN(Number(time))); i++ )  {
+		time = prompt("Enter your value:")
+		input[i] = time
+		//document.getElementById('massives').innerHTML += input[i] + ' '
+		}
+		input.pop()
+		var sum = 0
+		for (var f = 0; f < input.length ; f++)	{
+		document.getElementById('massives').innerHTML += input[f] + ' '
+		sum += Number(input[f])
+		}
+		alert(sum)
+		
+		//if ( time != "" || time != null || typeof(time) != "string" ) {}   (time != '')&& (typeof(Number(time)) == "number") 
+		}
+	function task25n6() {
+
+	}	
+
+
+
+
+</script>
 
 
 <hr width="400">
 		</td>
 	</tr>
+
 <table>
 	<footer>
     <div id="footer"><br><br><br>Made by RD.<br><br><br></div>
