@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"mas",
+				"massive"
+			],
+			[
+				"list",
+				"list2"
+			],
+			[
+				"limit",
+				"limit1"
+			],
+			[
+				"new",
+				"newArray"
+			],
+			[
+				"limi",
+				"limit2"
+			],
+			[
+				"New",
+				"NewArrayEnd"
+			],
+			[
+				"newAr",
+				"NewArrayEnd"
+			],
+			[
+				"mass",
+				"massive1"
+			],
+			[
+				"ip",
+				"input1"
+			],
+			[
+				"ro",
+				"RowOfValues"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"typ",
+				"typeof"
+			],
+			[
+				"typeof",
+				"typeof"
+			],
+			[
 				"input",
 				"input"
 			],
@@ -22,14 +74,6 @@
 			[
 				"last",
 				"lastElem"
-			],
-			[
-				"mas",
-				"massives"
-			],
-			[
-				"new",
-				"newOne"
 			],
 			[
 				"ele",
@@ -140,10 +184,6 @@
 				"true"
 			],
 			[
-				"limi",
-				"limit"
-			],
-			[
 				"ra",
 				"randomNumber"
 			],
@@ -178,10 +218,6 @@
 			[
 				"r",
 				"return"
-			],
-			[
-				"type",
-				"typeOfData"
 			],
 			[
 				"ty",
@@ -309,7 +345,7 @@
 			"file": "Task5_main.html",
 			"settings":
 			{
-				"buffer_size": 23785,
+				"buffer_size": 27782,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -372,6 +408,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
 		"/D/JS/Merk.html",
 		"/D/JS/Task4.js",
 		"/D/JS/task7.js",
@@ -404,6 +442,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"break",
 			"typeof",
 			"total",
 			"Nan",
@@ -469,8 +508,8 @@
 						"selection":
 						[
 							[
-								491,
-								491
+								268,
+								268
 							]
 						],
 						"settings":
@@ -490,15 +529,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23785,
+						"buffer_size": 27782,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23287,
-								23287
+								27414,
+								27414
 							]
 						],
 						"settings":
@@ -507,7 +546,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 10692.0,
+						"translation.y": 13060.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
