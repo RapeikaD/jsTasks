@@ -237,12 +237,11 @@
 			function pwer(value1,degree1) {
 				var rezul = value1;
 
-				for (degree1==degree1;degree1!=1;degree1--)
-				{
+				for (degree1==degree1;degree1!=1;degree1--) {
 					rezul *= value1						
 				}
 				return rezul
-				}
+			}
 		</script>
 			<h1>Task 16</h1>
 			<div>Create function which summurize numbers from 1 till "n ".</div>
@@ -571,18 +570,19 @@ var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500
 <div>6. Write script which able to find custom value from array and return it`s number, otherwise return -1.</div>
 <div>7. Write script which return all values from array according to custom range. (Enter limits in fields above)</div>
 <div>8. Write script which select range of values from array.</div>
+<div>9. Write script which select subarray with maximum sum.*******</div>
 
 <input type="text" name="Massive1" size="30" maxlength="30" id="massive1"/>
 <input type="text" name="Massive2" size="30" maxlength="30" id="massive2"/>
-<input type="button" value ="Click here to run tasks 24.1" onclick="task24n1()">
-<input type="button" value ="Click here to run tasks 24.2" onclick="task24n2()">
-<input type="button" value ="Click here to run tasks 24.3" onclick="task24n3()">
-<input type="button" value ="Click here to run tasks 24.4" onclick="task24n4()">
-<input type="button" value ="Click here to run tasks 24.5" onclick="task24n5()">
-<input type="button" value ="Click here to run tasks 24.6" onclick="task24n6()">
-<input type="button" value ="Click here to run tasks 24.7" onclick="task24n7()">
-<input type="button" value ="Click here to run tasks 24.8" onclick="task24n8()">
-<input type="button" value ="Click here to run tasks 24.9" onclick="task24n9()">
+<input type="button" value ="Click here to run task 24.1" onclick="task24n1()">
+<input type="button" value ="Click here to run task 24.2" onclick="task24n2()">
+<input type="button" value ="Click here to run task 24.3" onclick="task24n3()">
+<input type="button" value ="Click here to run task 24.4" onclick="task24n4()">
+<input type="button" value ="Click here to run task 24.5" onclick="task24n5()">
+<input type="button" value ="Click here to run task 24.6" onclick="task24n6()">
+<input type="button" value ="Click here to run task 24.7" onclick="task24n7()">
+<input type="button" value ="Click here to run task 24.8" onclick="task24n8()">
+<input type="button" value ="Click here to run task 24.9" onclick="task24n9()">
 
 <br><span id="massives"></span>
 <script type="text/javascript">
@@ -673,13 +673,13 @@ var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500
 		}
 		
 		if (start < end) {
-		while (start <= end){
+		while (start <= end) {
 			document.getElementById('massives').innerHTML += oldArray[start] + ' '
 			start++
 		}
 		}
 		else {
-			while (end <= start){
+			while (end <= start) {
 			document.getElementById('massives').innerHTML += oldArray[end] + ' '
 			end++
 		}
@@ -732,26 +732,191 @@ var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500
 		}
 
 		function task24n9() {
-		var massive = [-1,3,-5,0,2,1,3,-7,11,8]
-		for (var i = 0; i < massive.length; i++)
-			if (massive[i]>0) {
+		document.getElementById('massives').innerHTML = ''
+		var massive = [1, 2, 3, 0,-2,9,-2,-10]
+				
+		var maxSum = 0,
+    	partialSum = 0;
+  		for (var i = 0; i < massive.length; i++) {
+    	partialSum += massive[i];
+    	maxSum = Math.max(maxSum, partialSum);
+    	if (partialSum < 0) partialSum = 0;
+  		}
+  		return document.getElementById('massives').innerHTML = maxSum;
+		}
 
-				for (var i = 0; i < massive.length; i++)//<---
-					if (massive[i]>massive[i+1])//<---
-			}
-			else {
-			return document.getElementById('massives').innerHTML = 0
+</script>
+
+<h1>Task 25</h1>
+<div>Do following:</div>	
+<div>1. Create function wich add class (words divided by space) to object property. If property already have value from input - return primal object.</div>	
+<div>2. Create functoin wich transform strings like: "max-limit" to strings like: "maxLimit" </div>
+<div>3. Create function wich remove class (words divided by space) from object property.</div>
+<div>4. Create function wich return all numbers out of selected range. (use both text boxes for min and max borders) </div>
+<div>5. Create script wich will sort array in reverse order.</div>
+<div>6. Create script wich will sort array of string. Primal array should not be changed.</div>
+<div>7. Create script wich will mix numbers from array randomly.</div>
+<div>8. Create script to sort objects by "age" field.</div>
+<div>9. Create script to to show list of all elements .</div>
+
+<input type="button" value ="Click here to run task 25.1" onclick="task25n1()">
+<input type="button" value="Click here to run task 25.2" onclick="task25n2()">
+<input type="button" value="Click here to run task 25.3" onclick="task25n3(obj, document.getElementById('v1').value)">
+<input type="button" value="Click here to run task 25.4" onclick="task25n4(arr, document.getElementById('v1').value, document.getElementById('v2').value)">
+<input type="button" value="Click here to run task 25.5" onclick="task25n5()">
+<input type="button" value="Click here to run task 25.6" onclick="task25n6()">
+<input type="button" value="Click here to run task 25.7" onclick="task25n7()">
+<input type="button" value="Click here to run task 25.8" onclick="task25n8()">
+<input type="button" value="Click here to run task 25.9" onclick="task25n9()">
+
+<input type="text" name="Massive1" size="30" maxlength="30" id="v1"/>
+<input type="text" name="Massive2" size="30" maxlength="30" id="v2"/>
+
+<br><span id="result1"></span>
+<script type="text/javascript">
+	function task25n1() {
+	document.getElementById('result1').innerHTML = ''
+	var nv = document.getElementById('v1').value
+	var obj = {className: 'open menu'}
+	//var massiv = obj.className.split(' ')
+	/* ver 1
+	for (var i = 0; i < massiv.length; i ++) {
+		if (massiv[i] == nv) {
+			return document.getElementById('result1').innerHTML = massiv
+		}
+		else {
+			if (massiv[i] == massiv[massiv.length-1]) {
+			 massiv.push(nv) 
+			 break
 			}
 		}
-		
+	}
+	obj.className = massiv
+*/
+	//ver 2
+	if (obj.className.indexOf(nv) == -1) {
+		obj.className += ' ' + nv
+		return document.getElementById('result1').innerHTML = obj.className
+	}
+	else return document.getElementById('result1').innerHTML = obj.className
+	}
 	
-	
+	/*document.getElementById('result1').innerHTML = obj.className // massiv + " "
+	}*/
 		
+	function task25n2() {
+	var wrongString = document.getElementById('v1').value
+	var exString = wrongString.split('')
+
+		for (var i = 0; i < exString.length; i++ ) {
+			if (exString[i] == '-') {
+				exString.splice(i,2,((exString[i+1]).toUpperCase()))
+			}
+		}
+	document.getElementById('result1').innerHTML = exString.join('')
+	}
+
+
+	obj = {className: 'my menu my'}
+	function task25n3(obj,remove) {
+
+		if(obj.className.indexOf(remove) == -1 ) {
+			return document.getElementById('result1').innerHTML = obj.className
+		}
+
+		var exObj = obj.className.split(' ')
+		for( var i = 0; i < exObj.length; i ++) {
+			if (exObj[i] == remove) exObj.splice(i,remove.length-1)	
+		}
+		obj.className = exObj.join(' ')	
+		//alert (obj.className)
+		document.getElementById('result1').innerHTML = obj.className
+	}
+	 
+	var arr = [2, 3, 4, 8, 1, 5]
+	function task25n4(arr, range1, range2) {
+		for (var i = 0; i < arr.length; i ++) {
+			if (range1 <= arr[i] && arr[i] <= range2) {
+				arr.splice(i,1)
+				i--	}
+		}
+		return document.getElementById('result1').innerHTML = arr
+	}
+
+	function task25n5() {
+		var setOfValues = [2,4,1,8,-4,6,3,5,-2,9,0,-3,-1]
+		var sparePart
+		alert("Your array is: " + setOfValues)
+		for (var e = 0; e < setOfValues.length-1; e ++) {
+			for (var i = 0; i < setOfValues.length; i++) {
+				if (setOfValues[i] < setOfValues[i+1]) {
+				sparePart = setOfValues[i]
+				setOfValues[i] = setOfValues[i+1]
+				setOfValues[i+1] = sparePart
+				}
+			}
+		}
+		return document.getElementById('result1').innerHTML = setOfValues
+	} 
+
+	function task25n6() {
+		var arr = ["HTML", "JavaScript", "CSS"]
+		var newArr = arr.concat().sort()
+		document.getElementById('result1').innerHTML = newArr
+	}
+
+	function task25n7() {
+		var arr = [1,8,0,4,5,6,7,8,9,0]
+		var newArr = arr.sort(makeItRandom)
+		document.getElementById('result1').innerHTML = newArr
+	}
+
+	function makeItRandom(a,b) {
+		return Math.round(Math.random())
+	}
+
+	function task25n8() {
+		var vasya = { name: "Вася", age: 23 }
+		var masha = { name: "Маша", age: 18 }
+		var vovochka = { name: "Вовочка", age: 6 }
+		var people = [vasya, masha, vovochka]
+
+		var final = people.sort(objectSort)//see sort decription in fucntion below
+
+		for (var i = 0; i < people.length; i ++) {
+			document.getElementById('result1').innerHTML += final[i].name + ' '
+
+		}
+	}
+
+	function objectSort(a,b) {
+		return a.age - b.age // retrun less than 0 or more than 0 (return result based on that)
+	}	
+		
+	function task25n9() {
+		document.getElementById('result1').innerHTML = ''
+		var list = { value: 1 };
+		list.next = { value: 2 };
+		list.next.next = { value: 3 };
+		list.next.next.next = { value: 4 };
+		var size
+
+		for (var i = 0; i < 5; i ++) {
+			document.getElementById('result1').innerHTML += list.value
+			list = list.next
+		}
+		
+	}
+
+
+
+
 
 
 
 
 </script>
+
 
 
 <hr width="400">

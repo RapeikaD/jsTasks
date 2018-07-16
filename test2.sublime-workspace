@@ -4,8 +4,52 @@
 		"selected_items":
 		[
 			[
+				"clas",
+				"className"
+			],
+			[
 				"mas",
+				"massiv"
+			],
+			[
+				"ma",
+				"massiv"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"inp",
+				"input1"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"cal",
+				"className"
+			],
+			[
+				"all",
+				"allSets"
+			],
+			[
+				"asl",
+				"allSets"
+			],
+			[
+				"mass",
 				"massive"
+			],
+			[
+				"nega",
+				"NegativeSum"
 			],
 			[
 				"list",
@@ -14,10 +58,6 @@
 			[
 				"limit",
 				"limit1"
-			],
-			[
-				"new",
-				"newArray"
 			],
 			[
 				"limi",
@@ -30,10 +70,6 @@
 			[
 				"newAr",
 				"NewArrayEnd"
-			],
-			[
-				"mass",
-				"massive1"
 			],
 			[
 				"ip",
@@ -345,7 +381,7 @@
 			"file": "Task5_main.html",
 			"settings":
 			{
-				"buffer_size": 27782,
+				"buffer_size": 28770,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -529,15 +565,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27782,
+						"buffer_size": 28770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27414,
-								27414
+								28460,
+								28460
 							]
 						],
 						"settings":
@@ -546,7 +582,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13060.0,
+						"translation.y": 13573.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
