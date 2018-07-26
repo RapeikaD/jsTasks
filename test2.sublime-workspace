@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"formatedResult"
+			],
+			[
+				"fi",
+				"first"
+			],
+			[
+				"reuc",
+				"reduce"
+			],
+			[
+				"F",
+				"FinalOutput"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"arr",
+				"arrLength"
+			],
+			[
+				"enter",
+				"entrance"
+			],
+			[
+				"list",
+				"listCalc"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"re",
+				"result1"
+			],
+			[
+				"new",
+				"newArr"
+			],
+			[
+				"se",
+				"setOfValues"
+			],
+			[
+				"range",
+				"range2"
+			],
+			[
+				"ex",
+				"exObj"
+			],
+			[
+				"spli",
+				"split"
+			],
+			[
 				"clas",
 				"className"
 			],
@@ -22,10 +82,6 @@
 			[
 				"inp",
 				"input1"
-			],
-			[
-				"new",
-				"newValue"
 			],
 			[
 				"cla",
@@ -50,10 +106,6 @@
 			[
 				"nega",
 				"NegativeSum"
-			],
-			[
-				"list",
-				"list2"
 			],
 			[
 				"limit",
@@ -176,10 +228,6 @@
 				"firstCharacter"
 			],
 			[
-				"re",
-				"result2"
-			],
-			[
 				"S",
 				"String2Length"
 			],
@@ -218,10 +266,6 @@
 			[
 				"tr",
 				"true"
-			],
-			[
-				"ra",
-				"randomNumber"
 			],
 			[
 				"le",
@@ -381,7 +425,7 @@
 			"file": "Task5_main.html",
 			"settings":
 			{
-				"buffer_size": 28770,
+				"buffer_size": 37199,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -478,6 +522,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"charAt",
+			"ch",
+			"chart",
+			"chartAt",
 			"break",
 			"typeof",
 			"total",
@@ -565,15 +613,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28770,
+						"buffer_size": 37199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28460,
-								28460
+								36935,
+								36935
 							]
 						],
 						"settings":
@@ -582,7 +630,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13573.0,
+						"translation.y": 18176.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

@@ -757,9 +757,11 @@ var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500
 <div>6. Create script wich will sort array of string. Primal array should not be changed.</div>
 <div>7. Create script wich will mix numbers from array randomly.</div>
 <div>8. Create script to sort objects by "age" field.</div>
-<div>9. Create script to to show list of all elements .</div>
+<div>9. Create script to to show list of all elements. (see 4 code versions inside .html)</div>
+<div>10. Filter anagrams. Return array of words without anagrams.</div>
+<div>11. Function should return array of unique values.</div>
 
-<input type="button" value ="Click here to run task 25.1" onclick="task25n1()">
+<input type="button" value="Click here to run task 25.1" onclick="task25n1()">
 <input type="button" value="Click here to run task 25.2" onclick="task25n2()">
 <input type="button" value="Click here to run task 25.3" onclick="task25n3(obj, document.getElementById('v1').value)">
 <input type="button" value="Click here to run task 25.4" onclick="task25n4(arr, document.getElementById('v1').value, document.getElementById('v2').value)">
@@ -768,6 +770,8 @@ var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500
 <input type="button" value="Click here to run task 25.7" onclick="task25n7()">
 <input type="button" value="Click here to run task 25.8" onclick="task25n8()">
 <input type="button" value="Click here to run task 25.9" onclick="task25n9()">
+<input type="button" value="Click here to run task 25.10" onclick="task25n10()">
+<input type="button" value="Click here to run task 25.11" onclick="task25n11(strings)">
 
 <input type="text" name="Massive1" size="30" maxlength="30" id="v1"/>
 <input type="text" name="Massive2" size="30" maxlength="30" id="v2"/>
@@ -899,25 +903,143 @@ var ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500
 		list.next = { value: 2 };
 		list.next.next = { value: 3 };
 		list.next.next.next = { value: 4 };
+		var m2 = []
 		var size
-
-		for (var i = 0; i < 5; i ++) {
-			document.getElementById('result1').innerHTML += list.value
+		//cicle ver
+		//for (var i = 0; i < 5; i ++) {
+		//	document.getElementById('result1').innerHTML += list.value
+		//	list = list.next
+		//}
+		//reverse cicle ver
+		for (var i = 4; i > 0; i --) {
+			m2.unshift(list.value)
 			list = list.next
+
 		}
-		
+		document.getElementById('result1').innerHTML += m2
+		//listCalc(list) //<- recursion call
 	}
+		//reverse output using recursion
+		/*function listCalc(list) {
+			if(list.next != undefined) {
+				listCalc(list.next)
+			}
+			document.getElementById('result1').innerHTML += list.value + ' '
+		}*/
 
+		//straight output using recursion
+		/*function listCalc(list) {
+			document.getElementById('result1').innerHTML += list.value + ' '
+			if(list.next != undefined) {
+				listCalc(list.next)
+			}
+		}*/
+		function task25n10() {
+			var arr = ["воз", "киборг", "корсет", "ЗОВ", "гробик", "костер", "сектор"]
+			var word = []
+		
+			for (var i = 0; i < arr.length; i ++) {
+				for (var e = 1; e < arr.length; e++) {
+					if (arr[i].length == arr[e].length) {
+						word = arr[i].split('')
+							for( var f = 0; f < word.length; f++) {
+								if (arr[e].indexOf(word[e]) == -1) break
+							}
+						arr.splice(e,1)	
+							e++
+					}
+				}
+			}
+			document.getElementById('result1').innerHTML = arr	
+		}
 
+		var strings = ["кришна", "кришна", "харе", "харе","харе", "харе", "кришна", "кришна", "8-()"]
 
+		function task25n11(arr) {
+			for (var i = 0; i < arr.length; i ++) {
+				for (var e = 1; e < arr.length-1; e++) {
+					if (arr[i].length == arr[e].length && arr[e].indexOf(arr[i]) != -1) {
+						arr.splice(e,1)	
+						
+					}
+				}
+			}
+		document.getElementById('result1').innerHTML = arr
+		}
+</script>
 
+<h1>Task 25</h1>
+<div>Do following:</div>	
+<div>1. Re-write cicle using "map".</div>	
+<div>2. Write function which return array of his partial sum.</div>	
 
+<input type="button" value="Click here to run task 26.1" onclick="task26n1()">
+<input type="button" value="Click here to run task 26.2" onclick="task26n2(arr)">
 
+<!--<input type="text" name="entrance1" size="30" maxlength="30" id="t26"/>-->
+<br><span id="task26"></span>
+<script type="text/javascript">
+	
+	function task26n1() {
+		var arr = ["Есть", "жизнь", "на", "Марсе"]
+		var arrLength = []
+		//Re-write cicle below
+		/*for (var i = 0; i < arr.length; i++) {
+		  arrLength[i] = arr[i].length;
+		}*/
 
+		arrLength = arr.map(function(wtf) {return wtf.length})
+		alert (arrLength)
+		}
+
+		var arr = [1,2,3,4,5,6,7,8,9]
+
+	function task26n2(arr) {
+		var result = []
+		var partialSum = 0
+		arr.reduce(function(first,next) { 
+
+			//return result.push(partialSum + next)
+			partialSum = partialSum + next 
+			return result.push(partialSum)
+		},arr[0])
+
+		document.getElementById('task26').innerHTML = result
+	}
 
 </script>
 
+<h1>Final Task</h1>
+<div>Realize RLE-encoding: AAAB -> A3B.</div>
+<input type="text" name="finalInput" size="30" maxlength="30" id="incomingValue">
+<input type="button" value="Click here to run Final task!" onclick="finalTask(input())">
+<br><span id="FinalOutput"></span>
 
+<script type="text/javascript">
+	//get primal string
+	function input() {
+		var finalArr = []
+		return finalArr = (document.getElementById('incomingValue').value).split('')
+	}
+	
+	function finalTask(dataStream) {
+		var amount = 0
+		var coded =[]
+		
+		for( var i = 0; i < dataStream.length; i ++) {
+			for (var e = i; dataStream[e] == dataStream[i]; e ++) {
+					amount++
+			}
+					i = e-1
+					coded.push(dataStream[e-1])
+					if (amount >1)coded.push(amount)
+					amount = 0
+		}	
+		var formatedResult = coded.join('')
+		document.getElementById('FinalOutput').innerHTML = formatedResult
+	}
+
+</script>
 
 <hr width="400">
 		</td>
