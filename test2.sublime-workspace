@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"result3"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"res",
+				"result3"
+			],
+			[
+				"tot",
+				"TotalSeconds"
+			],
+			[
+				"sec",
+				"SecondsNow"
+			],
+			[
+				"second",
+				"seconds"
+			],
+			[
+				"Da",
+				"data"
+			],
+			[
+				"up",
+				"upgrade"
+			],
+			[
+				"max",
+				"maxIndex"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
 				"for",
 				"formatedResult"
 			],
@@ -38,10 +78,6 @@
 			[
 				"ra",
 				"random"
-			],
-			[
-				"re",
-				"result1"
 			],
 			[
 				"new",
@@ -244,10 +280,6 @@
 				"getElementById"
 			],
 			[
-				"max",
-				"maxlength\tAttr"
-			],
-			[
 				"ac",
 				"action\tAttr"
 			],
@@ -364,10 +396,6 @@
 				"function"
 			],
 			[
-				"in",
-				"input\tTag"
-			],
-			[
 				"di",
 				"div\tTag"
 			],
@@ -404,29 +432,28 @@
 	"buffers":
 	[
 		{
-			"file": "Task19.html",
+			"file": "entry_t.html",
 			"settings":
 			{
-				"buffer_size": 1411,
+				"buffer_size": 4969,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "t19.js",
+			"file": "Task4/spec.js",
 			"settings":
 			{
-				"buffer_size": 924,
+				"buffer_size": 2041,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Task5_main.html",
+			"file": "Task4/conf.js",
 			"settings":
 			{
-				"buffer_size": 37199,
-				"encoding": "UTF-8",
+				"buffer_size": 117,
 				"line_ending": "Windows"
 			}
 		}
@@ -488,6 +515,39 @@
 	},
 	"file_history":
 	[
+		"/D/JS/Task4/conf.js",
+		"/D/JS/Task4/Player.js",
+		"/D/JS/Task4/PlayerSpec.js",
+		"/D/JS/Task4/spec/spec.js",
+		"/D/JS/Task4/spec/helpers/jasmine_examples/SpecHelper.js",
+		"/D/JS/Task4/spec/jasmine_examples/PlayerSpec.js",
+		"/D/JS/Task4/spec/Song.js",
+		"/D/JS/Task4/spec/Player.js",
+		"/D/JS/Task4/spec/jasmine.json",
+		"/D/JS/Task4/spec/conf.js",
+		"/D/JS/spec/spec.js",
+		"/D/JS/spec/jasmine_examples/PlayerSpec.js",
+		"/D/JS/spec/helpers/jasmine_examples/SpecHelper.js",
+		"/D/JS/spec/conf.js",
+		"/D/JS/lib/jasmine_examples/Player.js",
+		"/D/JS/lib/jasmine_examples/Song.js",
+		"/D/JS/spec/support/jasmine.json",
+		"/D/JS/ptr_test/spec/support/jasmine.json",
+		"/D/JS/ptr_test/spec.js",
+		"/D/JS/ptr_test/conf.js",
+		"/D/JS/ptr_test/lib/jasmine_examples/Song.js",
+		"/D/JS/ptr_test/lib/jasmine_examples/Player.js",
+		"/D/JS/Task5_main.html",
+		"/D/JS/Task19.html",
+		"/D/JS/t19.js",
+		"/D/JS/ptr_test/spec/jasmine_examples/PlayerSpec.js",
+		"/D/JS/ptr_test/todo-spec.js",
+		"/D/JS/entry_t.html",
+		"/D/JS/entry_t",
+		"/D/JS/entry_tasks.html",
+		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/JS/entry_tasks.html.html",
+		"/D/JS/ENTRY_TASK.html",
 		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
 		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
 		"/D/JS/Merk.html",
@@ -508,7 +568,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -548,24 +608,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Task19.html",
+					"file": "entry_t.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1411,
+						"buffer_size": 4969,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								660,
-								660
+								4941,
+								4941
 							]
 						],
 						"settings":
@@ -573,7 +633,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2124.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -581,19 +641,47 @@
 				},
 				{
 					"buffer": 1,
-					"file": "t19.js",
+					"file": "Task4/spec.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 924,
+						"buffer_size": 2041,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								268,
-								268
+								1198,
+								1198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 184.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Task4/conf.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -605,35 +693,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Task5_main.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 37199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								36935,
-								36935
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 18176.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]

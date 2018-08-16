@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Entry Task</title>
+</head>
+
+<body>
+	<div>The tasks below are around basic JS knowledge, related to data types, functions and JS objects.<br> Use any ES notation to create appropriate scripts. Design is up to you. Use Google Chrome console or any other way to debug/run the scripts.<br> The final result should be formed in several independent scripts. </div>
+
+	<h1> Task 1 </h1>
+	<div> Create a function(s) that fulfills array with 10 random integer values and returns a multiply of 3 greatest values. </div>
+	<input type="button" value="Multiply 3 random value" onclick="task1()"><br>
+	<span id="result1"></span>
+		
+		<script type="text/javascript">
+			function task1() {
+				var array = []
+				var topThree = []
+				var maxIndex
+				for ( var i = 0; i < 10; i++) {
+					array[i] = Math.floor((1 - Math.random())*10)
+				}
+				document.getElementById('result1').innerHTML = "Array: " + array
+
+				for(amount = 0; amount < 3; amount++) {
+					//find max value
+					highest = array.reduce(function(last,current,i) {
+						return highest = Math.max(last,current)
+					})
+					topThree[amount] = highest
+					//remove max value from array 
+					for(var t = 0; t < array.length; t ++) {
+						if (array[t] == highest) {
+							array.splice(t,1)
+							break
+						}
+					}
+				}
+
+				//multiply 3 values
+				var result = topThree.reduce(function(prevCall,current) {
+					return prevCall * current
+				})
+				
+
+				document.getElementById('result1').innerHTML += "<br/>" +"<b>Highest values: " + topThree
+				//array.splice(maxIndex,i)
+				//document.getElementById('result1').innerHTML += "<br/>" + array
+				document.getElementById('result1').innerHTML += "<br/> <b>Multiply of 3 greatest values is: " + result
+				 
+			}
+		</script>	
+
+		<H1> Task 2 </H1>
+		<div> Create a function(s) that returns total amount of seconds starting from the beginning of today and till now. </div>
+		<input type="button" value="Total amount of second since day started" onclick="task2()"><br>
+		<span id="result2">
+		<script type="text/javascript">
+
+			function task2() {
+				var HoursNow = (new Date().getHours()) * 60 * 60
+				var MinutesNow = (new Date().getMinutes()) * 60
+				var SecondsNow = new Date().getSeconds()
+				var TotalSeconds = HoursNow + MinutesNow + SecondsNow
+
+				 return document.getElementById('result2').innerHTML = TotalSeconds
+			}
+		</script>
+
+		<H1> Task 3 </H1>
+		<div> Define an object happiness within 5 properties. Each property should have default integer value, representing its priority. Then create a function that returns a list of property names sorted by priority (highest is on top). </div>
+		<input type="button" value="Total amount of second since day started" onclick="task3()"><br>
+		<span id="result3"></span>
+		<script type="text/javascript">
+			function task3() {
+				//clear output
+				document.getElementById('result3').innerHTML = ""
+
+				//define variables
+				var happiness = {
+					kind: 4,
+					money: 3,
+					loyalty: 2,
+					courage: 1,
+					brave: 5
+				}
+				var list = []
+				var counter = 0
+
+				//fill array with values to organize correct order
+				for (key in happiness) {
+					list[counter] = happiness[key]
+					counter ++
+				}
+
+				//reorder list
+				function order(a,b) {
+					if (a < b) return 1;
+					if (a > b) return -1; 
+				}
+				list.sort(order)
+
+				//show properties according to order of their values
+				document.getElementById('result3').innerHTML += "List of soerted properties:<br>"
+				for (var i = 0; i < list.length; i ++) {
+					for (key in happiness) {
+						if (happiness[key] == list[i]) document.getElementById('result3').innerHTML +=  key + " -- " + happiness[key] + "<br>"		
+					}
+				}
+			}
+		</script>
+
+<H1> Task 4 </H1>
+<div>Create a simple TAF to perform e2e testing according to steps below. Result should be sent as archive of TAF folder.</div> <br>
+<div>Pre. Manually create 2 email accounts on tut, gmail or any other mail service;</div>
+<div>1.	Login into account 1; </div>
+<div>2.	Send email to account 2. Email body is up to you;</div>
+<div>3.	Check presence of e-mail in Sent folder;</div>
+<div>4.	Login into account 2;</div>
+<div>5.	Check presence of email sent from account 1. </div>
+<div>Use Node.JS + Jasmine + WebDriverIO or Protractor.</div> <br>
+Tips: use randomize to form email Subject in order to make it unique in terms of multi-time execution.<br>
+<a href="https://nodejs.org/en/">Node.JS</a><br>
+<a href = "https://docs.angularjs.org/guide/e2e-testing"> e2e tesing guide</a><br>
+<a href = "https://jasmine.github.io/"> Jasmine</a><br>
+<a href = "http://www.protractortest.org/#"> Test resource??? </a><br>
+<a href = "http://webdriver.io/"> Webdriver </a><br>
+<a href = "http://webdriver.io/guide/testrunner/pageobjects.html"> Webdriver guide </a><br>
+<a href = "https://www.joecolantonio.com/2016/06/14/top-8-essential-javascript-automation-frameworks"> Automation framework (review)</a>
+
+
+
+
+
+
+
+
+</body>
+</html>
