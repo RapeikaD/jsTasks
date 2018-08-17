@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"prot",
+				"protractor"
+			],
+			[
+				"pro",
+				"Protractor"
+			],
+			[
+				"get",
+				"getText"
+			],
+			[
+				"send",
+				"sendKeys"
+			],
+			[
 				"re",
 				"result3"
 			],
@@ -276,10 +292,6 @@
 				"value"
 			],
 			[
-				"get",
-				"getElementById"
-			],
-			[
 				"ac",
 				"action\tAttr"
 			],
@@ -338,10 +350,6 @@
 			[
 				"tex",
 				"textRecognition"
-			],
-			[
-				"pro",
-				"prompt"
 			],
 			[
 				"fn",
@@ -444,7 +452,7 @@
 			"file": "Task4/spec.js",
 			"settings":
 			{
-				"buffer_size": 2041,
+				"buffer_size": 2278,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -568,7 +576,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -624,8 +632,8 @@
 						"selection":
 						[
 							[
-								4941,
-								4941
+								1937,
+								1937
 							]
 						],
 						"settings":
@@ -633,10 +641,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2124.0,
+						"translation.y": 1728.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -645,15 +653,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2041,
+						"buffer_size": 2278,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1198,
-								1198
+								1045,
+								1045
 							]
 						],
 						"settings":
@@ -661,7 +669,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 184.0,
+						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -692,7 +700,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

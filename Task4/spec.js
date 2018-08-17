@@ -12,8 +12,8 @@
   });
 });*/
 
-describe('This is first ptr test', function() {
-	it("should send email", function() {
+describe('This is first ptr test which', function() {
+	it("should send email and verify Sent email", function() {
 
 		browser.waitForAngularEnabled(false);
 		//browser.get('/non-angular-login-page.html');
@@ -26,42 +26,68 @@ describe('This is first ptr test', function() {
 		element(by.id('passwordNext')).click();
 		browser.wait(element(by.css(".T-I")).isPresent())
   		browser.sleep(5000)
-		element(by.xpath('//*[@id=":46"]/div/div')).click();
+  		browser.get("https://mail.google.com/mail/#inbox?compose=new")
+		//element(by.xpath('//*[@id=":46"]/div/div')).click();
 		browser.sleep(5000)
 
-		var number = Math.round((Math.random()*10))
+		var number = Math.round((Math.random()*100))
 		var RandomTitle = "Hello dear client # " + number
 
 		element(by.name('to')).sendKeys('Retestd2@gmail.com')
 		element(by.name('subjectbox')).sendKeys(RandomTitle)
 		element(by.className('Am Al editable LW-avf')).sendKeys('You are the best!')
-		browser.sleep(5000)
+		
 		browser.actions().keyDown(protractor.Key.CONTROL).sendKeys('\uE007').perform();
+		//browser.sleep(5000)
+		//window.open('https://mail.google.com/mail/#sent')
+		browser.get("https://mail.google.com/mail/#sent")
 		browser.sleep(5000)
-		element(by.xpath('//*[@id=":4i"]/div/div[2]')).click()
-			
 		
-		var body = element.all(by.tagName('span'))
-		var bodyt = element(by.cssContainingText('.div', 'hey!'))
+		//this check if header equal to generated one, if so - verify if body is equal to template
+		let headerList = element.all(by.css('.bog'))
+		let list = element.all(by.css('.y2'))
 
-		expect (bodyt.getText()).toEqual('hey!')
+		for(var i = 0; i < headerList.length; i ++) {
+			if (headerList[i] == RandomTitle) {
+				expect(headerList.get(i).getText()).toBe(RandomTitle)
+				expect(list.get(i).getText()).toBe(' - You are the best!')
+				break;
+			}
+		}
 		
-		//element(by.xpath('//*[@id=":46"]/div/div')).click();
-		//element(by.xpath('//*[@id=":46"]/div/div/text()')).click();
-		//element(by.css('.T-I.J-J5-Ji.T-I-KE.L3')).click();
-		//element(by.xpath('//*[@id=":46"]/div/div')).click();
-		//element(by.cssContainingText('div', 'Compose')).click();
-		//element(by.css(".T-I")).click();
-		//element(by.className("T-I J-J5-Ji T-I-KE L3")).click();
-		//element(by.PartialButtonText("Compose")).click();
-		//element(by.buttonText("Compose")).click();
-		//element(by.cssContainingText("Compose")).click();
-		//mail = driver.findelement(by.linktext('Compose') 
-		//element(by.text(mail)).click();
+		//let headerList = element.all(by.css('.bog'))
+		//let list = element.all(by.css('.y2'))
+		//expect(list.get(1).getText()).toBe(' - You are the best!')
+		//expect(headerList.get(1).getText()).toBe(RandomTitle)
+		
+		browser.close()
 
 	})
 
+	it('should check presence of email sent from account 1', function() {
+			
+		//var browser2 = browser.forkNewDriverInstance();
+		//browser2.waitForAngularEnabled(false);		
+		//browser2.get('http://gmail.com/');
+		browser.restart()
+		browser.waitForAngularEnabled(false);
+		browser.get('http://gmail.com/')
 
+		element(by.name('identifier')).sendKeys('Retestd2@gmail.com');
+		element(by.id('identifierNext')).click();
+		browser.pause();
+		element(by.name('password')).sendKeys('strongerpassword!');
+		element(by.id('passwordNext')).click();
+		browser.wait(element(by.css(".T-I")).isPresent())
 
+		let unreadedLetters = element.all(by.css('.zF'))
+		let inboxHeaders = element.all(by.css('.bog'))
+		let mailBody = element.all(by.css('.y2'))
 
+		for(var e = 0; e < unreadedLetters.length; e++)
+		if (unreadedLetters[e] == "test d" && inboxHeaders[e] == RandomTitle) {
+			expect(mailBody.get(i).getText()).toBe(' - You are the best!')
+			break;
+		}
+	})
 })
