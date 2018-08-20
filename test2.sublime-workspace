@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"mailBody"
+			],
+			[
+				"brow",
+				"browser"
+			],
+			[
+				"br",
+				"browser"
+			],
+			[
+				"ra",
+				"RandomTitle"
+			],
+			[
+				"lis",
+				"headerList"
+			],
+			[
 				"prot",
 				"protractor"
 			],
@@ -92,10 +112,6 @@
 				"listCalc"
 			],
 			[
-				"ra",
-				"random"
-			],
-			[
 				"new",
 				"newArr"
 			],
@@ -121,10 +137,6 @@
 			],
 			[
 				"mas",
-				"massiv"
-			],
-			[
-				"ma",
 				"massiv"
 			],
 			[
@@ -452,7 +464,7 @@
 			"file": "Task4/spec.js",
 			"settings":
 			{
-				"buffer_size": 2278,
+				"buffer_size": 3225,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -641,10 +653,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1728.0,
+						"translation.y": 1800.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -653,15 +665,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2278,
+						"buffer_size": 3225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1045,
-								1045
+								2712,
+								2712
 							]
 						],
 						"settings":
@@ -669,7 +681,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -688,8 +700,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								117,
+								117
 							]
 						],
 						"settings":
@@ -700,7 +712,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
