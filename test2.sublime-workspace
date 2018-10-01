@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getElementById"
+			],
+			[
+				"o",
+				"ouptut1"
+			],
+			[
+				"to",
+				"toLocaleString"
+			],
+			[
+				"Sec",
+				"SecondsRemain"
+			],
+			[
+				"total",
+				"totalSeconds"
+			],
+			[
+				"ex",
+				"exactDay"
+			],
+			[
+				"Lo",
+				"LongDate"
+			],
+			[
+				"L",
+				"LongDate"
+			],
+			[
+				"Da",
+				"DayOfTWeek"
+			],
+			[
+				"d",
+				"DayOfTWeek"
+			],
+			[
+				"i",
+				"innerHTML"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"is",
+				"isAbsent"
+			],
+			[
 				"ma",
 				"mailBody"
 			],
@@ -32,10 +84,6 @@
 				"Protractor"
 			],
 			[
-				"get",
-				"getText"
-			],
-			[
 				"send",
 				"sendKeys"
 			],
@@ -62,10 +110,6 @@
 			[
 				"second",
 				"seconds"
-			],
-			[
-				"Da",
-				"data"
 			],
 			[
 				"up",
@@ -122,10 +166,6 @@
 			[
 				"range",
 				"range2"
-			],
-			[
-				"ex",
-				"exObj"
 			],
 			[
 				"spli",
@@ -256,14 +296,6 @@
 				"break"
 			],
 			[
-				"total",
-				"totalCost"
-			],
-			[
-				"is",
-				"isEmpty"
-			],
-			[
 				"he",
 				"height"
 			],
@@ -278,10 +310,6 @@
 			[
 				"str",
 				"string2"
-			],
-			[
-				"to",
-				"toLowerCase"
 			],
 			[
 				"char",
@@ -420,20 +448,12 @@
 				"div\tTag"
 			],
 			[
-				"i",
-				"infoMessage"
-			],
-			[
 				"part",
 				"part2"
 			],
 			[
 				"a",
 				"armoe"
-			],
-			[
-				"o",
-				"or"
 			],
 			[
 				"Ad",
@@ -452,28 +472,42 @@
 	"buffers":
 	[
 		{
-			"file": "entry_t.html",
+			"contents": "<!DOCTYPE html>\n<meta charset=\"utf-8\">\n<html>\n<head>\n\t<title>ww</title>\n\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css\">\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js\"></script>\n\t<script>mocha.setup('bdd');</script>\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js\"></script>\n\t<script> var assert = chai.assert</script>\n</head>\n<body>\n\t<script>\n\tfunction pow(x,n) {\n\t\t\n\t\tif (n < 0) return \"NaN\"\n        if (n%1 != 0) return \"NaN\"\n        \tvar result = 1;\n        for (var i = 0; i < n; i++) {\n        \t\n\t\t\tresult *= x;\n\t\t}\n\n\t\treturn result;\n\t}\n\t</script>\n\t\t<script src=\"SandJS.js\"></script>\n\t\t<div id=\"mocha\"></div>\n\n\t\t<script>mocha.run();</script>\n  \t\t\n\n\n\n\n\n\t<!--\n\t\n\t<script type=\"text/javascript\">alert (1/0)</script>\n\t<script type=\"text/javascript\">alert ('wtf'*0)</script>\n\n\t<script src=\"SandJS.js\"></script>\n\t\t\n\n<script src=\"SandJS.js\"></script>\n\n<script>\n\tvar value\n\talert (value)//=undefined\n\tvar logic = (part4 == part4)\n\talert (logic)\n\n\n\tvar armor = {durability:\"high\",\n\t\t\t\tcolor:\"black\",\n\t\t\t\tweight:\"40\"\n\t\t\t\t\t\t\t\t\t}\nalert (armor) //not working\nalert (typeof armor)\nvar part2 = \"this is \"\nvar part1 = \"parta\"\n alert (part2+part1)//summ of 1 and 2\n var part4 = \"4\"\n var part5 = \"3\"\n \n alert (+part4+ +part5)//7\n alert (2*'3')// 6*/\n</script>\n-->\n\t\n\n\n</body>\n</html>",
+			"file": "sand.html",
+			"file_size": 1440,
+			"file_write_time": 131723206153833641,
 			"settings":
 			{
-				"buffer_size": 4969,
+				"buffer_size": 1367,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Part 3/Tasks1-3.html",
+			"settings":
+			{
+				"buffer_size": 4429,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Task4/spec.js",
+			"contents": "<!DOCTYPE html>\n<meta charset=\"utf-8\">\n<html>\n\n<head>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"firstCSSever.css\">\n    <style>\n    table.text {\n        width: 70%;     /* Ширина таблицы */\n        border-spacing: 0;    /* Расстояние между ячейками */\n    }\n\n    table.text td {\n        width: 50%;      /* Ширина ячеек */\n        vertical-align: top;      /* Выравнивание по верхнему краю */\n    }\n\n    td.rightcol {     /* Правая ячейка */\n        text-align: left;     /* Выравнивание по правому краю */\n    }\n    </style>\n    <title>\n        List of completed JS tasks.\n    </title>\n</head>\n\n<body>\n    <table class=\"text\">\n        <tr>\n            <td>\n                <h1>Task 3</h1>\n                <div>Create script which show notification.(For ex.:Rabbit counter) </div>\n                <p id=\"preCount\"></p>\n                <p id=\"afterCount\"> </p>\n                <input type=\"button\" value=\"Click here to run task3\" onclick=\"task3()\">\n                <script defer=\"true\">\n                function task3() {\n                    var preCount = document.getElementById(\"preCount\")\n                    preCount.innerText = 'Rabit count:'\n                    alert('Rabbit1')\n                    alert('Rabbit2')\n                    alert('Rabbit3')\n                    var afterCount = document.getElementById(\"afterCount\")\n                    afterCount.innerText = 'No more rabits!'\n                }\n                </script>\n                <h1>Task 4</h1>\n                <div>Verify behavior of defferent type values. Run external scipt.</div>\n                <input type=\"button\" value=\"Click here to run task 4\" onclick=\"task4()\">\n                <script src=\"task4.js\">\n                function task4()\n                </script>\n                <h1>Task 5</h1>\n                <div>Create simple if/else script which ask a real name of JS. Run internal script.</div>\n                <input type=\"button\" value=\"Click here to run task 5\" onclick=\"task5()\">\n                <script type=\"text/javascript\">\n                function task5() {\n                    var q1 = prompt('That`s the official name of javascript')\n                    if (q1 != \"EcmaScript\") {\n                        alert('Don`t know? \\nit is \"EcmaScript\"!')\n                    } else {\n                        alert('correct!')\n                    }\n                }\n                </script>\n                <h1>Task 6</h1>\n                <div>Create scipt which returns: \"1\" - if positive value entered, \"-1\" - if negative, \"0\" - if zero. </div>\n                <input type=\"button\" value=\"Click here to run task 6\" onclick=\"task6()\">\n                <script type=\"text/javascript\">\n                function task6() {\n                    var q2 = prompt(\"Please enter any value\", \"right here\")\n                    if (q2 == 0) {\n                        alert(\"0\");\n                    } else if (q2 > 0) {\n                        alert(\"1\");\n                    } else {\n                        alert(\"-1\")\n                    }\n                }\n                </script>\n                <h1>Task 7</h1>\n                <div>Create script which read entered value and give you response based on input.</div>\n                <input type=\"button\" value=\"Click here to run task 7\" onclick=\"task7()\">\n                <script src=\"task7.js\">\n                function task7()\n                </script>\n                <h1>Task 8</h1>\n                <div>Create script which return lowest value.</div>\n                <input type=\"button\" value=\"Click here to run task 8\" onclick=\"task8()\">\n                <script>\n                function task8() {\n                    var a = prompt(\"A = \");\n                    var b = prompt(\"B = \");\n                    (+a + +b < 4) ? alert(\"low\"): alert(\"Many\")\n                }\n                </script>\n                <h1>Task 9</h1>\n                <div>Create script which defined if value belong to defined interval or not. Also write reverse script.</div>\n                <input type=\"button\" value=\"Click here to run task 9\" onclick=\"task9()\">\n                <script type=\"text/javascript\">\n                function task9() {\n                    var age = prompt(\"age is\")\n                    var f = (14 <= +age && +age <= 90)\n                    alert(f)\n                    alert(14 >= +age && +age >= 90)\n                    alert(!f)\n                }\n                </script>\n                <h1>Task 10</h1>\n                <div>Verify equlity of types.</div>\n                <input type=\"button\" value=\"Click here to run task 10\" onclick=\"task10()\">\n                <script type=\"text/javascript\">\n                function task10() {\n                    alert(String(null) == \"null\")\n                    alert(Number(\"200\") == \"200\")\n                    alert(Boolean(\"1\") == true)\n                }\n                </script>\n                <h1>Task 11</h1>\n                <div> Create script which show even-numbers.</div>\n                <input type=\"button\" value=\"Click here to run task 11\" onclick=\"task11()\">\n                <script type=\"text/javascript\">\n                function task11() {\n                    /*for (var i=0;i<11;i++)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif (0 == i%2) {\n\t\t\t\t\t\t\t\talert(i)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t}*/\n                    var i = 1;\n\n                    while (i) {\n                        if (i % 2 == 0) alert(i);\n                        if (i == 10) break;\n                        ++i;\n                    }\n                }\n                /*for (i=1;i<11;i++){\n                \tif(i%2!=0) alert (i);\n                }*/\n                </script>\n                <h1>Task 12</h1>\n                <Div>Create script which define type of entered value.</Div>\n                <input type=\"button\" value=\"Click here to run task 12\" onclick=\"task12()\">\n                <script type=\"text/javascript\">\n                function task12() {\n                    var textRecognition = prompt(\"Please enter text here\");\n                    var st = String(textRecognition)\n                    var nm = Number(textRecognition)\n                    var typeOfData\n                    //alert (st)\n                    //alert (nm)\n                    if (st == st && isNaN(nm)) {\n                        typeOfData = \"string\"\n                    } else typeOfData = \"number\"\n                    /*if (st != null && nm != null) {\n\t\t\ttypeOfData = \"number\"\n\t\t}\n\t\telse {typeOfData = \"null\"}*/\n                    switch (typeOfData) {\n                        case \"number\":\n                            alert(\"this is number\");\n                            break;\n                        case \"null\":\n                            alert(\"this is zero\");\n                            break;\n                        case \"string\":\n                            alert(\"this is string\");\n                            break;\n                        default:\n                            alert(\"unknow input\");\n                    }\n\n                }\n                </script>\n                <h1>Task 13</h1>\n                <div>Using \"?\" or \"||\", Write function, which return \"true\", if age>18, else asks confirmation and return it. </div>\n                <input type=\"button\" value=\"Click here to run task 13.1\" onclick=\"isAdult()\">\n                <script type=\"text/javascript\">\n                function isAdult(age) {\n                    var age = prompt(\"enter your age\")\n                    return (+age > 18) ? true : confirm(\"Parents allow?\")\n                }\n                </script>\n                <br>\n                <hr width=\"400\" align=\"left\">\n            </td>\n            <td>\n                <img src=http://bipbap.ru/wp-content/uploads/2017/10/3-6.png \">\n\t\t\t<h1>Task 11.1</h1>\n\t\t\t<Div>Create any script with \"switch\".</Div>\n\t<input type=\"button\" value=\"Please click here to run task\" onclick=\"task0()\">\n\t<script type=\"text/javascript\">\n\t\tfunction task0() {\n\t\t\tvar entrance = prompt (\"type any primal element\")\n\t\t\tswitch (entrance){\n\t\t\t\tcase \"fire \":\n\t\t\t\talert(\"hot \");\n\t\t\t\tbreak;\n\t\t\t\tcase \"water \":\n\t\t\t\talert ('wet');\n\t\t\t\tbreak;\n\t\t\t\tcase \"earth \":\n\t\t\t\talert(\"durable \");\n\t\t\t\tbreak;\n\t\t\t\tdefault:\n\t\t\t\talert (\"probably this is a water \");\n\t\t\t}\n\t\t}\n\t</script>\n\t<br><br><br><br><br><br>\n\t\t\t<hr width=\"400 \" align=\"justify \">\n\t\t\t\t\t</td>\n\n\t\t<td class=\"rightcol \">\n\t\t\t\t\t\n\t\t<h1>Task 14</h1>\n\t\t<div>Create function which return lowest number</div>\n\t\t<input type=\"button\" value=\"Click here to run task 14 \" onclick=\"Min()\">\n\t\t<script type=\"text/javascript\">\n\t\t\t\tfunction Min() {\t\t\t\n\t\t\t\tvar first = prompt(\"Number one \")\n\t\t\t\tvar second = prompt(\"Number two \")\n\t\t\t\treturn(+first > +second) ? alert(\"Minimal value is \" + second) : alert(\"Minimal value is \" + first)\n\t\t\t}\n\t\t</script>\n\t\t<h1>Task15</h1>\n\t\t<div>Write pow(x,n) function which return \"x \" in \"n \" degree. Function should request values. Also function shouldn`t accept only natural \"n \" values. </div>\n\t\t<input type=\"button\" value=\"Click here to run task 15 \" onclick=\"collectData() \">\n\t\t\t<script type=\"text/javascript\">\n\t\t\tfunction collectData() {\n\t\t\t\tvar value1 = prompt(\"please enter value \")\n\t\t\t\tvar degree1 = prompt(\"please enter degree \")\n\t\t\t\treturn (degree1%1==0) ? alert (pwer(value1,degree1)) : alert(\"try again \")\n\t\t\t}\n\t\t\tfunction pwer(value1,degree1) {\n\t\t\t\tvar rezul = value1;\n\n\t\t\t\tfor (degree1==degree1;degree1!=1;degree1--) {\n\t\t\t\t\trezul *= value1\t\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\treturn rezul\n\t\t\t}\n\t\t</script>\n\t\t\t<h1>Task 16</h1>\n\t\t\t<div>Create function which summurize numbers from 1 till \"n \".</div>\n\t\t\t<input type=\"button\" value=\"Click here to run task 16 \" onclick=\"summarize(5)\">\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\t/*function task16(){\n\t\t\t\t\tvar n1 = prompt(\"enter N \")\n\t\t\t\t\tvar rez1 = 0\n\t\t\t\t\tfor (var i=0;i<=n1;i++){\n\t\t\t\t\trez1=rez1+i\n\t\t\t\t\t}\n\t\t\t\t\talert (rez1)\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\tfunction summarize(n1)\n\t\t\t\t\t{\tvar rez2;\n\t\t\t\t\t\trez2 = ((1+n1)/2)*n1;\n\t\t\t\t\t\treturn alert(rez2);\n\t\t\t\t\t}\n\n\t\t\t\t\t/*var x = 2\n\t\t\t\t\tvar n = 3\n\t\t\t\t\tbasic = x\n\t\t\t\t\t\tdo{\n\t\t\t\t\t\tbasic*=x\n\t\t\t\t\t\tn--}\n\t\t\t\t\t\twhile (n!=1)\n\t\t\t\t\t\t\talert (basic)\n\t\t\t\t}*/\n\t\t\t</script>\n\t\t\t<h1>Task 17</h1>\n\t\t\t<div>Create function which will return factorial of the nubmer.(+Fibonaci)*****</div>\n\t\t\t<input type=\"button\" value=\"Factorial \" onclick=\"alert( fact(4) ) \">\n\t\t\t<input type=\"button\" value=\"Fibonachi \" onclick=\"alert( fibon(3) ) \">\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\t/*function task17(i){\n\t\t\t\t\tvar rezult = i\n\t\t\t\t\tfor (i=i-1;i!=1;i--)\n\t\t\t\t\t{\n\t\t\t\t\t\trezult=rezult*i\n\t\t\t\t\t}\n\t\t\t\t\talert(rezult)\n\t\t\t\t}*/\n\t\t\t\tfunction fact(e){\n\n\t\t\t\t if(e != 1)\n\t\t\t\t\t{\n\t\t\t\t\treturn e*fact(--e);\n\t\t\t\t\t}\n\t\t\t\t\treturn 1;\n\t\t\t\t\t}\n\t\t\n\t\t\t</script>\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tvar fibon = function fibo(n) {\n\t\t\t\tvar a = 1,b = 1;\n\n\t\t\t\t  for(var i = 3; i <= n; i++)\n\t\t\t\t  {\n\t\t\t\t  \tvar rez = a+b;\n\t\t\t\t  \ta = b;\n\t\t\t\t  \tb = rez;\n\t\t\t\t    }\n\t\t\t\t  return rez;\n\t\t\t\t}\n\t\t\t</script>\n\t\t\t<h1>Task 18</h1>\n<div>Introduction to methods and properties.</div>\n<input type=\"button\" value=\"Click here to run task 18\" onclick=\"task18() \">\n<script type=\"text/javascript\">\nvar task18 = function tryMethods() {\n    alert(\"Any string \".length)\n    var time = (\"this text should be \".toUpperCase())\n    alert(time + \" (getting bigger) \")\n    alert(time.toLowerCase() + \" (back to low) \")\n}\n</script>\n<H1>Task 19</H1>\n<div>Create tests for POW function:</div>\n<div>1. Check if any number in 0 degree = 1. (except zero)</div>\n<div>2. Check if 0 in 0 degree equal to <b>NaN</b></div>\n<div>3. Check if number in -n degree equal <b>NaN</b></div>\n<div>4. Check if number in fractional degree equal <b>NaN</b></div>\n<H3>See results in t19.js</H3>\n\n<h1>Task 20</h1>\n<div> 1. Create function which accept 2 number and calculate their sum.</div>\n<div> 2. Create function which return decimal part of the number.</div>\n<div> 3. Create function which return random value in range from 0 to max</div>\n<div> 4. Create function which return random value in range from min to max. (In addition, make it whole) </div>\n<input type=\"button\" value=\"Click here to run task 20.1\" onclick=\"task20n1()\">\n<input type=\"button\" value=\"Click here to run task 20.2\" onclick=\"task20n2()\">\n<input type=\"button\" value=\"Click here to run task 20.3\" onclick=\"task20n3()\">\n<input type=\"button\" value=\"Click here to run task 20.4\" onclick=\"task20n4()\">\n<script type=\"text/javascript\">\n\tfunction task20n1()\t{\n\t\t//var t = (Math.random()*10)\n\t\t//alert (isFinite(parseFloat(t)))\n\t\t//alert (isFinite(parseInt(t)))\n\t\t//alert (Math.floor(parseFloat(t)))\n\t\t//alert (Math.ceil(parseInt(t)))\n\t\t\t//alert (Math.round(t))\n\t\t\t//alert (Math.floor(t))\n\t\t\t//alert (Math.ceil(t))\n\t\t\t//alert (~~t)\n\t\t\t//alert (t*t ^0)\nvar nOne = Number(prompt(\"Number one is\"))\nvar nTwo = Number(prompt(\"Number two is\"))\nvar SumRezult = (nOne + nTwo)\nalert (SumRezult)\n\t\t}\n\tfunction task20n2()\t{\n\t\tvar decimal = (prompt(\"Enter fractional value\"))\n\t\t//var length2 = decimal.indexOf(\".\") \n\t\tvar length = decimal.length-1-decimal.indexOf(\".\") \n\t\tvar decimalPart =  ((decimal %1).toFixed(length))\n\t\talert (decimalPart)\n\t}\t\n\tfunction task20n3(){\n\t\tvar limit = prompt (\"Enter max value\")\n\t\tvar randomNumber = Math.random()*limit \n\t\talert (randomNumber.toFixed(2))\n\t}\n\tfunction task20n4(){\n\t\tvar limitMax = Number (prompt (\"Enter max value\"))\n\t\tvar limitMin = Number (prompt (\"Enter min value\"))\n\t\tvar randomNumber = limitMin + Math.random()*(limitMax-limitMin) \n\t\talert (randomNumber.toFixed(0))\n\t}\n</script>\n<h1>Task 21</h1>\n<div>1. Create script which find all starting positions of substring.(fill both fields)</div><br>\n<div>2. Create script which change first letter to Uppercase. (fill only first field)</div>\n<div>3. Create script which return true if \"viagra\" or \"xxx\" strings are exists in entered string, and false if not. It should be not register-sensitive. (fill only first field)</div>\n<div>4. Create script which truncate string if it`s exceed limit. (field 1 for string, field 2 for max limit)</div>\n<div>5. Create script which select only number from currency string. (for ex: $10 -> 10.)</div>\n<input type=\"text\" name=\"String 1\" size=\"30\" maxlength=\"30\" id=\"input1\"/>\n<input type=\"text\" name=\"String 2\" size=\"30\" maxlength=\"30\" id=\"input2\"/><br>\n<input type=\"button\" value=\"Enter\" onclick=\"chr()\"><br>\n<div>Substring positions:</div>\n<span id=\"result\"></span>\n\n<input type=\"button\" value=\"Task21.2\" onclick=\"task21n2()\">\n<span id=\"result2\"></span>\n\n<input type=\"button\" value=\"Task21.3\" onclick=\"task21n3()\">\n<span id=\"result3\"></span>\n\n<input type=\"button\" value=\"Task21.4\" onclick=\"task21n4()\">\n<span id=\"result4\"></span>\n\n<input type=\"button\" value=\"Task21.5\" onclick=\"task21n5()\">\n<span id=\"result5\"></span>\n\n<script type=\"text/javascript\">\n\t\tvar chr = function task21(){\n\t\t//alert (\" \\b , \\f, \\r , \\t , \\u2384 Aint\t\\\\ \")\n\t\t//var position = string1.charAt(1)\n\t\t//return (string1.indexOf('a'))\n\t\tvar string1 = document.getElementById('input1').value\n\t\tvar string2 = document.getElementById('input2').value\n\t\tdocument.getElementById('result').innerHTML = ''\n\t\tdocument.getElementById('result2').innerHTML = ''\n\t\t//var string1 = prompt(\"type string 1\")\n\t\t//var string2 = prompt(\"type string 2\")\n\t\tvar String2Length = string2.length\n\t\tvar here = 0;\n\t\tif (string1 == '' || string2 == '')\treturn alert (\"Please enter all required values!\")\n\t\tif ((string1.indexOf(string2,here))== -1) return alert (\"Sorry, sub string is not found!\")\n\t\twhile ((string1.indexOf(string2,here))!= -1) {\n\t\t\tdocument.getElementById('result').innerHTML += ((string1.indexOf(string2,here)))\n\t\t\there = String2Length + (string1.indexOf(string2,here))\n\n\t\t\tif ((string1.indexOf(string2,here))!= -1) {\n\t\t\t\tdocument.getElementById('result').innerHTML += \",\"}\n\t\t\telse {\n\t\t\t\tdocument.getElementById('result').innerHTML += \".\"}\t\n\t\t\t}\n\t\treturn //document.getElementById('result2').innerHTML+= \"\\n\" + substring()\n\t\t//return \"width\" [1]\n\t\t//return \"Информация\".toUpperCase()\n\t\t//return \"find something in here\".indexOf('in',2)\n\t\t//return \"find something in here\".lastIndexOf ('in')\n\t\t//return position\n\t\t}\n\t\tvar task21n2 = function() {\n\t\t\tvar string1 = document.getElementById('input1').value\n\t\tif (string1 == '') return {}\n\t\t\tvar firstCharacter = string1.charAt(0)\n\t\t\tvar restString = string1.substr(1,string1.length)\n\t\tdocument.getElementById('result2').innerHTML = firstCharacter.toUpperCase() + restString\n\t\t}\n\n\t\tvar task21n3 = function() {\n\t\t\tvar string1 = (document.getElementById ('input1').value).toLowerCase()\n\t\t\tif (string1.indexOf(\"viagra\",0) != -1 || string1.indexOf(\"xxx\",0) != -1) {\n\t\t\t\tdocument.getElementById('result3').innerHTML = \"true\"}\n\t\t\t\telse return document.getElementById('result3').innerHTML = \"false\"\n\t\t} \n\n\t\tvar task21n4 = function(){\n\t\tvar string1 = (document.getElementById ('input1').value)\n\t\tvar MaxLength = (document.getElementById ('input2').value)\n\t\tif (string1.length > +MaxLength) { \n\t\t\tvar newString = string1.substr(0,MaxLength - 3) +'...'\n\t\t\tdocument.getElementById('result4').innerHTML = newString\n\t\t}\n\t\telse {\n\t\t\tdocument.getElementById('result4').innerHTML = string1\n\t\t}\n\t\t}\n\t\tvar task21n5 = function(){\n\t\t\tvar string1 = (document.getElementById ('input1').value)\n\t\t\tvar fullString = string1.length\n\t\t\tdocument.getElementById('result5').innerHTML = string1.substr(1,fullString)\n\t\t}\n\t</script>\n\n<h1>Task 22</h1>\n<div>Do following:</div>\n<div>1. Create blank object.</div>\n<div>2. Add properties with values.</div>\n<div>3. Change property.</div>\n<div>4. Remove property.</div>\n\n<input type=\"button\" value=\"Click Here to run Task 22\" onclick=\"task22()\">\n<span id ='ObjectData'></span>\n<script type=\"text/javascript\">\n\t\t\n\t\tfunction task22(){\n\t\tvar tree = {}\n\t\ttree.size = 20\n\t\ttree.name = \"Astra\"\n\t\ttree['age'] = 10\t \n\t\ttree.color = \"Green\"\n\t\tvar any = 'size'\n\t\ttree.branch = { height:20, weight:30, age:10} //another way\n\t\tdocument.getElementById('ObjectData').innerHTML = (\"Size of \" + tree.name + \"is \" + tree.size + \" meters. \")\n\t\tdocument.getElementById('ObjectData').innerHTML = tree[any]\n\t\ttree.name = \" Jeweline\"\n\t\tdocument.getElementById('ObjectData').innerHTML = tree.branch.age + tree.name\n\t\tdelete tree.color\n\t\t//if (\"color\" in tree) {document.getElementById('ObjectData').innerHTML = \"Yes\"} \n\t\t//document.getElementById('ObjectData').innerHTML += (tree.color)\n\t\tfor (item in tree)\n\t\t\tdocument.getElementById('ObjectData').innerHTML += item\n\t\t}\n</script>\n\n<h1>Task 23</h1>\n<div>1. Create script which define if object is empty.</div>\n<div>2. Create script which summurize all properties, if there are no properties results hould be 0.</div>\n<div>3. Create script which show name of the employee with highest salary.</div>\n<div>4. Create script which multiply all numeric properties by 2 and return Object.</div>\n\n<input type=\"button\" value=\"Click Here to run Task 23.1\" onclick=\"task23()\">\n<input type=\"button\" value=\"Click Here to run Task 23.2\" onclick=\"task23n2()\">\n<input type=\"button\" value=\"Click Here to run Task 23.3\" onclick=\"task23n3()\">\n<input type=\"button\" value=\"Click Here to run Task 23.4\" onclick=\"task23n4()\">\n<br><span id ='isEmpty'></span>\n\n<script type=\"text/javascript\">\nfunction task23() {\n\tvar house = {}//floor: 20, room:2}\n\t//document.getElementById('isEmpty').innerHTML = house\n\tfor (var item in house){\n\t\treturn document.getElementById('isEmpty').innerHTML = false\n\t}\n\t\treturn document.getElementById('isEmpty').innerHTML = true\n}\n\nfunction task23n2(){\n\tvar shop = {lime:100, cookies:80}\n\tshop.chicken = 200\n\tshop.bread = 50\n\tshop.apple = 90\n\tvar totalCost = 0\n\t//var shop = {}\n\tfor (item in shop) {\n \ttotalCost += shop[item]\n \t}\n\tdocument.getElementById('isEmpty').innerHTML = totalCost\n}\n\nfunction task23n3(){\n\tvar salary1 = 0\n\tvar salary2 = 0\n\tvar topSalary = \"There are no employees\"\n\tvar name = \"There are no employees\"\n\tvar company = {sam:100, denis:90, Rie: 73, John: 32, Ivy:170, Jinny:197}\n\tfor (item in company){\n\t\tsalary1 = company[item]\n\t\tif(salary1 < salary2) {\n\t\t\ttopSalary = salary2\n\t\t\tsalary2 = company[item]\n\t\t\tname = item\n\t\t}\n\t\telse {\n\t\t\ttopSalary = salary1\n\t\t\tsalary2 = salary1\n\t\t\tname = item\n\t\t}\n\t\t//alert (topSalary)\n\t\t}\n\tdocument.getElementById('isEmpty').innerHTML = \"Most valuable employee is \" + item + \". Her salary is: \" + topSalary\n}\n\nfunction task23n4() {\nvar ship = {area:'space', height: 100, name: 'starshater', type:'2A', crew: 2500 }\n\tfor (item in ship) {\n\t\tif (typeof (ship[item])!= 'string')\n\t\tship[item] *= 2\n\t\tdocument.getElementById('isEmpty').innerHTML += \"\\n\" + item + \": \" + ship[item]\n\t}\n\t}\t\n\n</script>\n\n<h1>Task 24</h1>\n<div>Do following:</div>\n<div>1. Write script which return last element of array.</div>\n<div>2. Write script which add at the and of array \"Computer\" value.(fill text box).</div>\n<div>3. Write script which add record to the end of array, then replace penultimate value, then remove firstm then add 2 value to the begining of the array.</div>\n<div>4. Write script which return random value from array.</div>\n<div>5. Write script which fill array with values (using prompt) and summurize them. Input should ends if user enter blank string or not numeric value, or press \"cancel\".</div>\n<div>6. Write script which able to find custom value from array and return it`s number, otherwise return -1.</div>\n<div>7. Write script which return all values from array according to custom range. (Enter limits in fields above)</div>\n<div>8. Write script which select range of values from array.</div>\n<div>9. Write script which select subarray with maximum sum.*******</div>\n\n<input type=\"text\" name=\"Massive1\" size=\"30\" maxlength=\"30\" id=\"massive1\"/>\n<input type=\"text\" name=\"Massive2\" size=\"30\" maxlength=\"30\" id=\"massive2\"/>\n<input type=\"button\" value =\"Click here to run task 24.1\" onclick=\"task24n1()\">\n<input type=\"button\" value =\"Click here to run task 24.2\" onclick=\"task24n2()\">\n<input type=\"button\" value =\"Click here to run task 24.3\" onclick=\"task24n3()\">\n<input type=\"button\" value =\"Click here to run task 24.4\" onclick=\"task24n4()\">\n<input type=\"button\" value =\"Click here to run task 24.5\" onclick=\"task24n5()\">\n<input type=\"button\" value =\"Click here to run task 24.6\" onclick=\"task24n6()\">\n<input type=\"button\" value =\"Click here to run task 24.7\" onclick=\"task24n7()\">\n<input type=\"button\" value =\"Click here to run task 24.8\" onclick=\"task24n8()\">\n<input type=\"button\" value =\"Click here to run task 24.9\" onclick=\"task24n9()\">\n\n<br><span id=\"massives\"></span>\n<script type=\"text/javascript\">\n\tfunction task24n1() {\n\tvar carModels = ['Audi', 'Opel', 'Citroen', 'Hundai', 'Lexus', 'Mazda', true, 1, { plane: 'boeng'}, 'Last item']\n\tvar mas = new Array('one', 'two') //alternative way to create array\n\tvar mas2 = new Array(4)//this is mass with 2 items inside, not with number \"2\"!\n\tvar lastElem = carModels.length-1\n\tdocument.getElementById('massives').innerHTML = carModels[lastElem]\n\t//alert (mas + mas2)\n\t//carModels.pop()//object boeng was removed\n\t//carModels.push('Nissan', \"Mercedes\") //2 records was added to the end of the massive\n\t//alert (carModels + carModels.length)\n\t//alert (carModels.shift()) //remove first elemnt and return it\n\t//alert (carModels.unshift('Audi8', 'Audi 100')) //add elemts to begining of the massive\n\t//alert (carModels)\n\t}\n\tfunction task24n2() {\n\t\tvar carModels = ['Audi', 'Opel', 'Citroen', 'Hundai', 'Lexus', 'Mazda', 'Last item']\n\t\tvar newOne = document.getElementById('massive1').value\n\t\tcarModels.push(newOne)\n\t\tvar lastElem = carModels.length-1\n\t\tdocument.getElementById('massives').innerHTML = \"Now last element is \\\"\" + carModels[lastElem] + \"\\\"\"\n\t}\n\tfunction task24n3() {\n\t\tvar tr\n\t\talert(tr)\n\t\tvar music = ['Джаз',' Блюз']\n\t\tdocument.getElementById('massives').innerHTML += music + \"<br/>\"\n\t\tmusic.push(' Рок-н-Ролл')\n\t\tdocument.getElementById('massives').innerHTML += music + \"<br/>\"\n\t\tvar prelast = music.length-2\n\t\tmusic[prelast] = ' Классика'\n\t\tdocument.getElementById('massives').innerHTML += music + \"<br/>\"\n\t\talert (music.shift())\n\t\tdocument.getElementById('massives').innerHTML += music + \"<br/>\"\n\t\tmusic.unshift(' Реп',' Регги')\n\t\tdocument.getElementById('massives').innerHTML += music + \"<br/>\"\t\n\t}\n\tfunction task24n4() {\n\t\tvar carModels = ['Audi', 'Opel', 'Citroen', 'Hundai', 'Lexus', 'Mazda', 'Last item']\n\t\tvar randomA = (Math.random() *(carModels.length - 1))\n\t\tdocument.getElementById('massives').innerHTML = carModels[Math.round(randomA)]\n\t}\n\tfunction task24n5() {\n\t\tvar input = []\n\t  \tvar time = 0\n\t  \tdocument.getElementById('massives').innerHTML = ''\n\t  \t//alert(0 == null)\n\t  \t//alert(Number('asd'))\n\t\tfor (var i = 0 ;(time !== '') && (time !== null) && (!isNaN(Number(time))); i++ )  {\n\t\ttime = prompt(\"Enter your value:\")\n\t\tinput[i] = time\n\t\t//document.getElementById('massives').innerHTML += input[i] + ' '\n\t\t}\n\t\tinput.pop()\n\t\tvar sum = 0\n\t\tfor (var f = 0; f < input.length ; f++)\t{\n\t\tdocument.getElementById('massives').innerHTML += input[f] + ' '\n\t\tsum += Number(input[f])\n\t\t}\n\t\talert(sum)\n\t\t\n\t\t//if ( time != \"\" || time != null || typeof(time) != \"string\" ) {}   (time != '')&& (typeof(Number(time)) == \"number\") \n\t\t}\n\n\tfunction task24n6() {\n\t\tdocument.getElementById('massives').innerHTML = ''\n\t\tvar RowOfValues = ['test', 2, 'find', 'me', 4, 5, 1, 'null', 'true', 3]\n\t\tvar search = prompt('Please enter value you wnat to find')\n\t\tvar e = 0 \n\t\tfor (e; e < RowOfValues.length; e++){\n\t\tif (RowOfValues[e] != search) document.getElementById('massives').innerHTML = -1\n\t\t\telse return document.getElementById('massives').innerHTML = \"Value \" + RowOfValues[e] + ' stay on position ' + e \n\t\t}\n\t\t}\n\tfunction task24n7(){\n\t\tdocument.getElementById('massives').innerHTML = ''\n\t\tvar limit1 = document.getElementById('massive1').value\n\t\tvar limit2 = document.getElementById('massive2').value\n\t\tvar i, start, end\n\t\tvar result = []\n\t\tvar oldArray = [1,2,4,5,6,7,3,6,8,0]\n\t\t/*\tfor(var e = 0; e < oldArray.length; e++) {\n\t\t\tif(oldArray[e] == limit1) start = e\n\t\t\telse if (oldArray[e] == limit2) end = e\n\t\t\telse if (start != undefined && end != undefined) break\n\t\t}\n\t\t\n\t\tif (start < end) {\n\t\twhile (start <= end) {\n\t\t\tdocument.getElementById('massives').innerHTML += oldArray[start] + ' '\n\t\t\tstart++\n\t\t}\n\t\t}\n\t\telse {\n\t\t\twhile (end <= start) {\n\t\t\tdocument.getElementById('massives').innerHTML += oldArray[end] + ' '\n\t\t\tend++\n\t\t}\n\t\t}*/\n\t\t\n\t  \tfor (i = 0; i < oldArray.length; i++) {\n\t    if (oldArray[i] >= limit1 && oldArray[i] <= limit2) {\n\t      result.push(oldArray[i])\n\t    }\n\t  \t}\n\t\t  return document.getElementById('massives').innerHTML += result\n\t\t}\n\n\t\tfunction task24n8() {\n\t\t\tdocument.getElementById('massives').innerHTML =''\n\t\t\tvar list = []\n\t\t\tvar list2 = []\n\t\t\tvar item = 0, p = 2, shift = 0, result = 0, e = 0, t = 1\n\t\t\tvar amount = 100\n\n\t\t\t//array definition\n\t\t\tfor (var i = 2; i <= amount; i++) {\n\t\t\t\tlist[e] = i\n\t\t\t\t//list2[e] = i\n\t\t\t\t//document.getElementById('massives').innerHTML += list[e] + ' '\n\t\t\t\te++\n\t\t\t}\n\n\t\t\t//remove incorrect values\n\t\t\tfor(var p = 2; p * p < 100; p ++ ) {//list[t+1]\n\t\t\t\tfor (var i = 0; i < list.length; i++) {\t\t\n\t\t\t\titem = (p * list[i])\n\t\t\t\t//if ( item > 100 ) break\n\t\t\t\t\tfor (var e = 0; e < list.length; e++) {\n\t\t\t\t\t\tif (list[e] == item) {\n\t\t\t\t\t\tlist.splice(e, 1)\n\t\t\t\t\t\tbreak\n\t\t\t\t\t\t//shift--\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t//output\n\t\t\tfor( var o = 0; o < list.length; o++) {\n\t\t\t\tresult = result + list[o]\n\t\t\t\t//document.getElementById('massives').innerHTML = result + ' '\n\t\t\t\tdocument.getElementById('massives').innerHTML += list[o] + '  '\n\t\t\t\t}\n\t\t\t\t//document.getElementById('massives').innerHTML += '2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97'\n\t\t}\n\n\t\tfunction task24n9() {\n\t\tdocument.getElementById('massives').innerHTML = ''\n\t\tvar massive = [1, 2, 3, 0,-2,9,-2,-10]\n\t\t\t\t\n\t\tvar maxSum = 0,\n    \tpartialSum = 0;\n  \t\tfor (var i = 0; i < massive.length; i++) {\n    \tpartialSum += massive[i];\n    \tmaxSum = Math.max(maxSum, partialSum);\n    \tif (partialSum < 0) partialSum = 0;\n  \t\t}\n  \t\treturn document.getElementById('massives').innerHTML = maxSum;\n\t\t}\n\n</script>\n\n<h1>Task 25</h1>\n<div>Do following:</div>\t\n<div>1. Create function wich add class (words divided by space) to object property. If property already have value from input - return primal object.</div>\t\n<div>2. Create functoin wich transform strings like: \"max-limit\" to strings like: \"maxLimit\" </div>\n<div>3. Create function wich remove class (words divided by space) from object property.</div>\n<div>4. Create function wich return all numbers out of selected range. (use both text boxes for min and max borders) </div>\n<div>5. Create script wich will sort array in reverse order.</div>\n<div>6. Create script wich will sort array of string. Primal array should not be changed.</div>\n<div>7. Create script wich will mix numbers from array randomly.</div>\n<div>8. Create script to sort objects by \"age\" field.</div>\n<div>9. Create script to to show list of all elements. (see 4 code versions inside .html)</div>\n<div>10. Filter anagrams. Return array of words without anagrams.</div>\n<div>11. Function should return array of unique values.</div>\n\n<input type=\"button\" value=\"Click here to run task 25.1\" onclick=\"task25n1()\">\n<input type=\"button\" value=\"Click here to run task 25.2\" onclick=\"task25n2()\">\n<input type=\"button\" value=\"Click here to run task 25.3\" onclick=\"task25n3(obj, document.getElementById('v1').value)\">\n<input type=\"button\" value=\"Click here to run task 25.4\" onclick=\"task25n4(arr, document.getElementById('v1').value, document.getElementById('v2').value)\">\n<input type=\"button\" value=\"Click here to run task 25.5\" onclick=\"task25n5()\">\n<input type=\"button\" value=\"Click here to run task 25.6\" onclick=\"task25n6()\">\n<input type=\"button\" value=\"Click here to run task 25.7\" onclick=\"task25n7()\">\n<input type=\"button\" value=\"Click here to run task 25.8\" onclick=\"task25n8()\">\n<input type=\"button\" value=\"Click here to run task 25.9\" onclick=\"task25n9()\">\n<input type=\"button\" value=\"Click here to run task 25.10\" onclick=\"task25n10()\">\n<input type=\"button\" value=\"Click here to run task 25.11\" onclick=\"task25n11(strings)\">\n\n<input type=\"text\" name=\"Massive1\" size=\"30\" maxlength=\"30\" id=\"v1\"/>\n<input type=\"text\" name=\"Massive2\" size=\"30\" maxlength=\"30\" id=\"v2\"/>\n\n<br><span id=\"result1\"></span>\n<script type=\"text/javascript\">\n\tfunction task25n1() {\n\tdocument.getElementById('result1').innerHTML = ''\n\tvar nv = document.getElementById('v1').value\n\tvar obj = {className: 'open menu'}\n\t//var massiv = obj.className.split(' ')\n\t/* ver 1\n\tfor (var i = 0; i < massiv.length; i ++) {\n\t\tif (massiv[i] == nv) {\n\t\t\treturn document.getElementById('result1').innerHTML = massiv\n\t\t}\n\t\telse {\n\t\t\tif (massiv[i] == massiv[massiv.length-1]) {\n\t\t\t massiv.push(nv) \n\t\t\t break\n\t\t\t}\n\t\t}\n\t}\n\tobj.className = massiv\n*/\n\t//ver 2\n\tif (obj.className.indexOf(nv) == -1) {\n\t\tobj.className += ' ' + nv\n\t\treturn document.getElementById('result1').innerHTML = obj.className\n\t}\n\telse return document.getElementById('result1').innerHTML = obj.className\n\t}\n\t\n\t/*document.getElementById('result1').innerHTML = obj.className // massiv + \" \"\n\t}*/\n\t\t\n\tfunction task25n2() {\n\tvar wrongString = document.getElementById('v1').value\n\tvar exString = wrongString.split('')\n\n\t\tfor (var i = 0; i < exString.length; i++ ) {\n\t\t\tif (exString[i] == '-') {\n\t\t\t\texString.splice(i,2,((exString[i+1]).toUpperCase()))\n\t\t\t}\n\t\t}\n\tdocument.getElementById('result1').innerHTML = exString.join('')\n\t}\n\n\n\tobj = {className: 'my menu my'}\n\tfunction task25n3(obj,remove) {\n\n\t\tif(obj.className.indexOf(remove) == -1 ) {\n\t\t\treturn document.getElementById('result1').innerHTML = obj.className\n\t\t}\n\n\t\tvar exObj = obj.className.split(' ')\n\t\tfor( var i = 0; i < exObj.length; i ++) {\n\t\t\tif (exObj[i] == remove) exObj.splice(i,remove.length-1)\t\n\t\t}\n\t\tobj.className = exObj.join(' ')\t\n\t\t//alert (obj.className)\n\t\tdocument.getElementById('result1').innerHTML = obj.className\n\t}\n\t \n\tvar arr = [2, 3, 4, 8, 1, 5]\n\tfunction task25n4(arr, range1, range2) {\n\t\tfor (var i = 0; i < arr.length; i ++) {\n\t\t\tif (range1 <= arr[i] && arr[i] <= range2) {\n\t\t\t\tarr.splice(i,1)\n\t\t\t\ti--\t}\n\t\t}\n\t\treturn document.getElementById('result1').innerHTML = arr\n\t}\n\n\tfunction task25n5() {\n\t\tvar setOfValues = [2,4,1,8,-4,6,3,5,-2,9,0,-3,-1]\n\t\tvar sparePart\n\t\talert(\"Your array is: \" + setOfValues)\n\t\tfor (var e = 0; e < setOfValues.length-1; e ++) {\n\t\t\tfor (var i = 0; i < setOfValues.length; i++) {\n\t\t\t\tif (setOfValues[i] < setOfValues[i+1]) {\n\t\t\t\tsparePart = setOfValues[i]\n\t\t\t\tsetOfValues[i] = setOfValues[i+1]\n\t\t\t\tsetOfValues[i+1] = sparePart\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn document.getElementById('result1').innerHTML = setOfValues\n\t} \n\n\tfunction task25n6() {\n\t\tvar arr = [\"HTML\", \"JavaScript\", \"CSS\"]\n\t\tvar newArr = arr.concat().sort()\n\t\tdocument.getElementById('result1').innerHTML = newArr\n\t}\n\n\tfunction task25n7() {\n\t\tvar arr = [1,8,0,4,5,6,7,8,9,0]\n\t\tvar newArr = arr.sort(makeItRandom)\n\t\tdocument.getElementById('result1').innerHTML = newArr\n\t}\n\n\tfunction makeItRandom(a,b) {\n\t\treturn Math.round(Math.random())\n\t}\n\n\tfunction task25n8() {\n\t\tvar vasya = { name: \"Вася\", age: 23 }\n\t\tvar masha = { name: \"Маша\", age: 18 }\n\t\tvar vovochka = { name: \"Вовочка\", age: 6 }\n\t\tvar people = [vasya, masha, vovochka]\n\n\t\tvar final = people.sort(objectSort)//see sort decription in fucntion below\n\n\t\tfor (var i = 0; i < people.length; i ++) {\n\t\t\tdocument.getElementById('result1').innerHTML += final[i].name + ' '\n\n\t\t}\n\t}\n\n\tfunction objectSort(a,b) {\n\t\treturn a.age - b.age // retrun less than 0 or more than 0 (return result based on that)\n\t}\t\n\t\t\n\tfunction task25n9() {\n\t\tdocument.getElementById('result1').innerHTML = ''\n\t\tvar list = { value: 1 };\n\t\tlist.next = { value: 2 };\n\t\tlist.next.next = { value: 3 };\n\t\tlist.next.next.next = { value: 4 };\n\t\tvar m2 = []\n\t\tvar size\n\t\t//cicle ver\n\t\t//for (var i = 0; i < 5; i ++) {\n\t\t//\tdocument.getElementById('result1').innerHTML += list.value\n\t\t//\tlist = list.next\n\t\t//}\n\t\t//reverse cicle ver\n\t\tfor (var i = 4; i > 0; i --) {\n\t\t\tm2.unshift(list.value)\n\t\t\tlist = list.next\n\n\t\t}\n\t\tdocument.getElementById('result1').innerHTML += m2\n\t\t//listCalc(list) //<- recursion call\n\t}\n\t\t//reverse output using recursion\n\t\t/*function listCalc(list) {\n\t\t\tif(list.next != undefined) {\n\t\t\t\tlistCalc(list.next)\n\t\t\t}\n\t\t\tdocument.getElementById('result1').innerHTML += list.value + ' '\n\t\t}*/\n\n\t\t//straight output using recursion\n\t\t/*function listCalc(list) {\n\t\t\tdocument.getElementById('result1').innerHTML += list.value + ' '\n\t\t\tif(list.next != undefined) {\n\t\t\t\tlistCalc(list.next)\n\t\t\t}\n\t\t}*/\n\t\tfunction task25n10() {\n\t\t\tvar arr = [\"воз\", \"киборг\", \"корсет\", \"ЗОВ\", \"гробик\", \"костер\", \"сектор\"]\n\t\t\tvar word = []\n\t\t\n\t\t\tfor (var i = 0; i < arr.length; i ++) {\n\t\t\t\tfor (var e = 1; e < arr.length; e++) {\n\t\t\t\t\tif (arr[i].length == arr[e].length) {\n\t\t\t\t\t\tword = arr[i].split('')\n\t\t\t\t\t\t\tfor( var f = 0; f < word.length; f++) {\n\t\t\t\t\t\t\t\tif (arr[e].indexOf(word[e]) == -1) break\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\tarr.splice(e,1)\t\n\t\t\t\t\t\t\te++\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tdocument.getElementById('result1').innerHTML = arr\t\n\t\t}\n\n\t\tvar strings = [\"кришна\", \"кришна\", \"харе\", \"харе\",\"харе\", \"харе\", \"кришна\", \"кришна\", \"8-()\"]\n\n\t\tfunction task25n11(arr) {\n\t\t\tfor (var i = 0; i < arr.length; i ++) {\n\t\t\t\tfor (var e = 1; e < arr.length-1; e++) {\n\t\t\t\t\tif (arr[i].length == arr[e].length && arr[e].indexOf(arr[i]) != -1) {\n\t\t\t\t\t\tarr.splice(e,1)\t\n\t\t\t\t\t\t\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\tdocument.getElementById('result1').innerHTML = arr\n\t\t}\n</script>\n\n<h1>Task 25</h1>\n<div>Do following:</div>\t\n<div>1. Re-write cicle using \"map\".</div>\t\n<div>2. Write function which return array of his partial sum.</div>\t\n\n<input type=\"button\" value=\"Click here to run task 26.1\" onclick=\"task26n1()\">\n<input type=\"button\" value=\"Click here to run task 26.2\" onclick=\"task26n2(arr)\">\n\n<!--<input type=\"text\" name=\"entrance1\" size=\"30\" maxlength=\"30\" id=\"t26\"/>-->\n<br><span id=\"task26\"></span>\n<script type=\"text/javascript\">\n\t\n\tfunction task26n1() {\n\t\tvar arr = [\"Есть\", \"жизнь\", \"на\", \"Марсе\"]\n\t\tvar arrLength = []\n\t\t//Re-write cicle below\n\t\t/*for (var i = 0; i < arr.length; i++) {\n\t\t  arrLength[i] = arr[i].length;\n\t\t}*/\n\n\t\tarrLength = arr.map(function(wtf) {return wtf.length})\n\t\talert (arrLength)\n\t\t}\n\n\t\tvar arr = [1,2,3,4,5,6,7,8,9]\n\n\tfunction task26n2(arr) {\n\t\tvar result = []\n\t\tvar partialSum = 0\n\t\tarr.reduce(function(first,next) { \n\n\t\t\t//return result.push(partialSum + next)\n\t\t\tpartialSum = partialSum + next \n\t\t\treturn result.push(partialSum)\n\t\t},arr[0])\n\n\t\tdocument.getElementById('task26').innerHTML = result\n\t}\n\n</script>\n\n<h1>Final Task</h1>\n<div>Realize RLE-encoding: AAAB -> A3B.</div>\n<input type=\"text\" name=\"finalInput\" size=\"30\" maxlength=\"30\" id=\"incomingValue\">\n<input type=\"button\" value=\"Click here to run Final task!\" onclick=\"finalTask(input())\">\n<br><span id=\"FinalOutput\"></span>\n\n<script type=\"text/javascript\">\n\t//get primal string\n\tfunction input() {\n\t\tvar finalArr = []\n\t\treturn finalArr = (document.getElementById('incomingValue').value).split('')\n\t}\n\t\n\tfunction finalTask(dataStream) {\n\t\tvar amount = 0\n\t\tvar coded =[]\n\t\t\n\t\tfor( var i = 0; i < dataStream.length; i ++) {\n\t\t\tfor (var e = i; dataStream[e] == dataStream[i]; e ++) {\n\t\t\t\t\tamount++\n\t\t\t}\n\t\t\t\t\ti = e-1\n\t\t\t\t\tcoded.push(dataStream[e-1])\n\t\t\t\t\tif (amount >1)coded.push(amount)\n\t\t\t\t\tamount = 0\n\t\t}\t\n\t\tvar formatedResult = coded.join('')\n\t\tdocument.getElementById('FinalOutput').innerHTML = formatedResult\n\t}\n\n</script>\n\n<hr width=\"400\">\n\t\t</td>\n\t</tr>\n\n<table>\n\t<footer>\n    <div id=\"footer\"><br><br><br>Made by RD.<br><br><br></div>\n  \t</footer>\n</body>\n</html>",
+			"file": "Part 2/Main.html",
+			"file_size": 38510,
+			"file_write_time": 131770802538899902,
 			"settings":
 			{
-				"buffer_size": 3225,
-				"encoding": "UTF-8",
+				"buffer_size": 37199,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Task4/conf.js",
+			"file": "tbd.html",
 			"settings":
 			{
-				"buffer_size": 117,
+				"buffer_size": 5486,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -535,7 +569,19 @@
 	},
 	"file_history":
 	[
+		"/D/JS/tbd",
+		"/D/JS/Part 2/t19.js",
+		"/D/JS/Task19.html",
+		"/D/JS/first.js",
+		"/D/JS/task7.js",
+		"/D/JS/Task4.js",
+		"/D/JS/t19.js",
+		"/D/JS/Task5_main.html",
 		"/D/JS/Task4/conf.js",
+		"/D/JS/Task4/spec.js",
+		"/D/JS/SandJS.js",
+		"/D/JS/sand.html.txt",
+		"/D/JS/entry_t.html",
 		"/D/JS/Task4/Player.js",
 		"/D/JS/Task4/PlayerSpec.js",
 		"/D/JS/Task4/spec/spec.js",
@@ -557,12 +603,8 @@
 		"/D/JS/ptr_test/conf.js",
 		"/D/JS/ptr_test/lib/jasmine_examples/Song.js",
 		"/D/JS/ptr_test/lib/jasmine_examples/Player.js",
-		"/D/JS/Task5_main.html",
-		"/D/JS/Task19.html",
-		"/D/JS/t19.js",
 		"/D/JS/ptr_test/spec/jasmine_examples/PlayerSpec.js",
 		"/D/JS/ptr_test/todo-spec.js",
-		"/D/JS/entry_t.html",
 		"/D/JS/entry_t",
 		"/D/JS/entry_tasks.html",
 		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
@@ -571,8 +613,6 @@
 		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
 		"/C/Users/Dzmitry.Rapeika/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
 		"/D/JS/Merk.html",
-		"/D/JS/Task4.js",
-		"/D/JS/task7.js",
 		"/D/JS/firstCSSever.css",
 		"/D/JS/Tasks1-3.html",
 		"/D/JS/No way.html",
@@ -581,7 +621,6 @@
 		"/D/JS/Task4.html",
 		"/D/JS/Adaptation.js",
 		"/D/JS/SandJS",
-		"/D/JS/first.js",
 		"/D/JS/Adaptation",
 		"/D/JS/wer",
 		"/D/JS/Task4"
@@ -602,6 +641,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sand",
+			"san",
+			"sand",
+			"task19",
 			"charAt",
 			"ch",
 			"chart",
@@ -628,24 +671,82 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "entry_t.html",
+					"file": "sand.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4969,
+						"buffer_size": 1367,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1937,
-								1937
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Part 3/Tasks1-3.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4406,
+								4406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1674.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Part 2/Main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10111,
+								10111
 							]
 						],
 						"settings":
@@ -653,66 +754,38 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1800.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Task4/spec.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3225,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2712,
-								2712
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1026.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Task4/conf.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 117,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								117,
-								117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tbd.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5254,
+								5254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2754.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -751,7 +824,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 118.0
+		"height": 126.0
 	},
 	"output.find_results":
 	{

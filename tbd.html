@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Additional JS tasks</title>
+</head>
+<body>
+<div>More practice in JS.</div>
+
+<h2>Some tasks</h2>
+<div>1. Check if function argument is absent or "undefined"</div>
+<div>2. Create function "sum()" which return summ of all arguments (ex. sum(1,2) = 3)</div>
+<div>3.1 Create object Date for date of: 20 february 2012, 3h 12 min (Local time zone)</div>
+<div>3.2 Create functon which return current day of the week in short format (Ex.: пн) </div>
+<div>3.3 Create function to show day of the week in european order (i.e.: пн = 1, вс = 7)</div>
+<div>3.4 Create function which show day custom amount of days ago.</div>
+<div>3.5 Create function which return last day of the month.(for custom year)</div>
+<div>3.6-7 Show How much seconds past today + how much seconds remains.</div>
+<div>3.8 Show date in дд.мм.гг format.</div>
+<div>3.9 Show user status depending on how long time past.</div>
+
+
+<input type="button" value = "Not red button!" onclick = "isAbsent()">
+<input type="button" value = "Not red button 2!" onclick = "ArgsSummarizing(1,2,3,4)">
+<input type="button" value = "Not red button 3.1!" onclick = "showCustomDate()">
+<input type="button" value = "Not red button 3.2!" onclick = "showDayOfTheWeek(new Date())">
+<input type="button" value = "Not red button 3.3!" onclick = "showEuropeanDay(new Date(2018,7,5))">
+<input type="button" value = "Not red button 3.4!" onclick = "showPastDay(new Date(), 3)">
+<input type="button" value = "Not red button 3.5!" onclick = "showLastDayOTMonth(2017, 11)">
+<input type="button" value = "Not red button 3.6(7)!" onclick = "showSecondsLeft()">
+<input type="button" value = "Not red button 3.8!" onclick = "showFormatedDate(new Date(2014,0,30))">
+<input type="button" value = "Not red button 3.9!" onclick = "showOnlineStatus(new Date(new Date-7*60*1000))">
+<input type="button" value = "Сумма через замыкание" onclick="sum(2)(3)">
+
+<div><br><b>Results here:</b></div>
+<div id="ouptut1"></div>
+<script type="text/javascript">
+	function isAbsent() {
+		if (arguments.length == 1) {
+			alert (1) 
+			}
+			else {
+				alert (0)
+			}
+		}
+
+	function ArgsSummarizing () {
+		var sum = 0
+		for (var i = 0; i < arguments.length; i ++) {
+			 sum += arguments[i]
+		}
+		document.getElementById('ouptut1').innerHTML = sum
+	}	
+	//3.1
+	function showCustomDate() {
+		var customTime = new Date(2012,1,20,3,12)
+
+		var options = {
+			//era: 'short',
+			year: 'numeric',
+			month: 'long',
+			day:'numeric',
+			hour: 'numeric',
+			minute:'numeric'
+		}
+		
+		document.getElementById('ouptut1').innerHTML = customTime.toLocaleString('ru', options)
+		}
+	//3.2
+	
+	function showDayOfTheWeek(now) {	
+		var DayOfTWeek = now.getDay()
+		var LongDate 
+			switch (DayOfTWeek) {
+				case 1: LongDate = 'пн';
+				break;
+				case 2: LongDate = 'вт';
+				break;
+				case 3: LongDate = 'ср';
+				break;
+				case 4: LongDate = 'чт';
+				break;
+				case 5: LongDate = 'пт';
+				break;
+				case 6: LongDate = 'сб';
+				break;
+				case 0: LongDate = 'вс';
+				break;
+			} 
+		document.getElementById('ouptut1').innerHTML = LongDate
+		}
+
+	//3.3
+	function showEuropeanDay(day) {
+		var euWeekDay = day.getDay()
+		if( euWeekDay == 0 ) {euWeekDay = 7}
+		document.getElementById('ouptut1').innerHTML = euWeekDay 
+	}
+	//3.4
+	function showPastDay(customDate, daysbefore) {
+		
+		var PastDay = customDate.getDate() - daysbefore
+		customDate.setDate(PastDay)
+		document.getElementById('ouptut1').innerHTML = customDate//msNow
+	}
+	//3.5
+	function showLastDayOTMonth (year, month) {
+		var today = new Date(year,month)
+		var LongDate
+
+		switch (today.getDay()) {
+			case 1: LongDate = 'Пн';
+			break;
+			case 2: LongDate = 'Вт';
+			break;
+			case 3: LongDate = 'Ср';
+			break;
+			case 4: LongDate = 'Чт';
+			break;
+			case 5: LongDate = 'Пт';
+			break;
+			case 6: LongDate = 'Сб';
+			break;
+			case 0: LongDate = 'Вс';
+		}	
+		document.getElementById('ouptut1').innerHTML = today + "<br>" +
+													"<b>That was:</b> " + LongDate 
+	}
+	//3.6-3.7
+	function showSecondsLeft() {
+		var SecondsPast = (new Date().getHours() * 60 * 60 + new Date().getMinutes() * 60 + new Date().getSeconds())
+		var totalSeconds = 60 * 60 * 24
+		var SecondsRemain = totalSeconds - SecondsPast
+		document.getElementById('ouptut1').innerHTML += "<b>Total Seconds: </b>" + totalSeconds +  "<br>"
+		document.getElementById('ouptut1').innerHTML += "Past: " + SecondsPast + "<br>"
+		document.getElementById('ouptut1').innerHTML += "Remain: " + SecondsRemain
+	}
+	//3.8
+	function showFormatedDate (d) {
+		var unit = d
+		var options = {
+			year: '2-digit',
+			month: '2-digit',
+			day:'2-digit',			
+		}
+		document.getElementById('ouptut1').innerHTML = unit.toLocaleString("ru", options)
+	}
+	//3.9
+	function showOnlineStatus(date) {
+		var now = new Date()
+		var then = (now - date)///1000
+		var status
+		var TimeAgo = then / 1000
+				
+			if (then < 1000) { status = 'was online Just Now'}
+			else if (1000 < then && then <= 1000 * 60) {status = "was online " + Math.round(TimeAgo) + " seconds ago" }
+			else if (1000 * 60 < then && then <= 1000 * 60 * 60) {status = 'was online ' + Math.round(TimeAgo/60)+' min ago'}
+			else if (then > 1000 * 60 * 60) {status = 'was online ' + date.toLocaleString("ru", options)}
+			else {status = 'unknown'}
+		
+		document.getElementById('ouptut1').innerHTML = status
+	}
+	var rez22
+	function sum(num1) {
+		return function(num2) {return document.getElementById('ouptut1').innerHTML = rez22 = num1 + num2}
+		
+	}
+
+
+</script>
+
+
+
+</body>
+</html>
