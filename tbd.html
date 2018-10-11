@@ -31,6 +31,7 @@
 <input type="button" value = "Not red button 3.8!" onclick = "showFormatedDate(new Date(2014,0,30))">
 <input type="button" value = "Not red button 3.9!" onclick = "showOnlineStatus(new Date(new Date-7*60*1000))">
 <input type="button" value = "Сумма через замыкание" onclick="sum(2)(3)">
+<input type="button" value = "Строковый буфер" onclick="MB1()">
 
 <div><br><b>Results here:</b></div>
 <div id="ouptut1"></div>
@@ -165,6 +166,37 @@
 		return function(num2) {return document.getElementById('ouptut1').innerHTML = rez22 = num1 + num2}
 		
 	}
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	function makeBuffer() {
+		var ft = ''
+
+		function wtf(A) {
+			if(arguments.length == 0) {
+			 return ft 
+			}
+			else {
+			 ft += A
+			}
+		}
+
+		wtf.clear = function() {
+		  ft = '';
+		}
+		return wtf
+	}
+	
+	//ouptut for function above
+	function MB1() {
+	var buffer = makeBuffer()
+	buffer('one')
+	buffer('two')
+	buffer('three')
+	alert (buffer() )
+	buffer.clear()
+	alert(buffer() )
+	}
+
 
 
 </script>

@@ -503,11 +503,13 @@
 			}
 		},
 		{
+			"contents": "<!DOCTYPE html>\n<meta charset=\"utf-8\">\n<html>\n<head>\n\t<title>Additional JS tasks</title>\n</head>\n<body>\n<div>More practice in JS.</div>\n\n<h2>Some tasks</h2>\n<div>1. Check if function argument is absent or \"undefined\"</div>\n<div>2. Create function \"sum()\" which return summ of all arguments (ex. sum(1,2) = 3)</div>\n<div>3.1 Create object Date for date of: 20 february 2012, 3h 12 min (Local time zone)</div>\n<div>3.2 Create functon which return current day of the week in short format (Ex.: пн) </div>\n<div>3.3 Create function to show day of the week in european order (i.e.: пн = 1, вс = 7)</div>\n<div>3.4 Create function which show day custom amount of days ago.</div>\n<div>3.5 Create function which return last day of the month.(for custom year)</div>\n<div>3.6-7 Show How much seconds past today + how much seconds remains.</div>\n<div>3.8 Show date in дд.мм.гг format.</div>\n<div>3.9 Show user status depending on how long time past.</div>\n\n\n<input type=\"button\" value = \"Not red button!\" onclick = \"isAbsent()\">\n<input type=\"button\" value = \"Not red button 2!\" onclick = \"ArgsSummarizing(1,2,3,4)\">\n<input type=\"button\" value = \"Not red button 3.1!\" onclick = \"showCustomDate()\">\n<input type=\"button\" value = \"Not red button 3.2!\" onclick = \"showDayOfTheWeek(new Date())\">\n<input type=\"button\" value = \"Not red button 3.3!\" onclick = \"showEuropeanDay(new Date(2018,7,5))\">\n<input type=\"button\" value = \"Not red button 3.4!\" onclick = \"showPastDay(new Date(), 3)\">\n<input type=\"button\" value = \"Not red button 3.5!\" onclick = \"showLastDayOTMonth(2017, 11)\">\n<input type=\"button\" value = \"Not red button 3.6(7)!\" onclick = \"showSecondsLeft()\">\n<input type=\"button\" value = \"Not red button 3.8!\" onclick = \"showFormatedDate(new Date(2014,0,30))\">\n<input type=\"button\" value = \"Not red button 3.9!\" onclick = \"showOnlineStatus(new Date(new Date-7*60*1000))\">\n<input type=\"button\" value = \"Сумма через замыкание\" onclick=\"sum(2)(3)\">\n<input type=\"button\" value = \"Строковый буфер\" onclick=\"MB1()\">\n\n<div><br><b>Results here:</b></div>\n<div id=\"ouptut1\"></div>\n<script type=\"text/javascript\">\n\tfunction isAbsent() {\n\t\tif (arguments.length == 1) {\n\t\t\talert (1) \n\t\t\t}\n\t\t\telse {\n\t\t\t\talert (0)\n\t\t\t}\n\t\t}\n\n\tfunction ArgsSummarizing () {\n\t\tvar sum = 0\n\t\tfor (var i = 0; i < arguments.length; i ++) {\n\t\t\t sum += arguments[i]\n\t\t}\n\t\tdocument.getElementById('ouptut1').innerHTML = sum\n\t}\t\n\t//3.1\n\tfunction showCustomDate() {\n\t\tvar customTime = new Date(2012,1,20,3,12)\n\n\t\tvar options = {\n\t\t\t//era: 'short',\n\t\t\tyear: 'numeric',\n\t\t\tmonth: 'long',\n\t\t\tday:'numeric',\n\t\t\thour: 'numeric',\n\t\t\tminute:'numeric'\n\t\t}\n\t\t\n\t\tdocument.getElementById('ouptut1').innerHTML = customTime.toLocaleString('ru', options)\n\t\t}\n\t//3.2\n\t\n\tfunction showDayOfTheWeek(now) {\t\n\t\tvar DayOfTWeek = now.getDay()\n\t\tvar LongDate \n\t\t\tswitch (DayOfTWeek) {\n\t\t\t\tcase 1: LongDate = 'пн';\n\t\t\t\tbreak;\n\t\t\t\tcase 2: LongDate = 'вт';\n\t\t\t\tbreak;\n\t\t\t\tcase 3: LongDate = 'ср';\n\t\t\t\tbreak;\n\t\t\t\tcase 4: LongDate = 'чт';\n\t\t\t\tbreak;\n\t\t\t\tcase 5: LongDate = 'пт';\n\t\t\t\tbreak;\n\t\t\t\tcase 6: LongDate = 'сб';\n\t\t\t\tbreak;\n\t\t\t\tcase 0: LongDate = 'вс';\n\t\t\t\tbreak;\n\t\t\t} \n\t\tdocument.getElementById('ouptut1').innerHTML = LongDate\n\t\t}\n\n\t//3.3\n\tfunction showEuropeanDay(day) {\n\t\tvar euWeekDay = day.getDay()\n\t\tif( euWeekDay == 0 ) {euWeekDay = 7}\n\t\tdocument.getElementById('ouptut1').innerHTML = euWeekDay \n\t}\n\t//3.4\n\tfunction showPastDay(customDate, daysbefore) {\n\t\t\n\t\tvar PastDay = customDate.getDate() - daysbefore\n\t\tcustomDate.setDate(PastDay)\n\t\tdocument.getElementById('ouptut1').innerHTML = customDate//msNow\n\t}\n\t//3.5\n\tfunction showLastDayOTMonth (year, month) {\n\t\tvar today = new Date(year,month)\n\t\tvar LongDate\n\n\t\tswitch (today.getDay()) {\n\t\t\tcase 1: LongDate = 'Пн';\n\t\t\tbreak;\n\t\t\tcase 2: LongDate = 'Вт';\n\t\t\tbreak;\n\t\t\tcase 3: LongDate = 'Ср';\n\t\t\tbreak;\n\t\t\tcase 4: LongDate = 'Чт';\n\t\t\tbreak;\n\t\t\tcase 5: LongDate = 'Пт';\n\t\t\tbreak;\n\t\t\tcase 6: LongDate = 'Сб';\n\t\t\tbreak;\n\t\t\tcase 0: LongDate = 'Вс';\n\t\t}\t\n\t\tdocument.getElementById('ouptut1').innerHTML = today + \"<br>\" +\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"<b>That was:</b> \" + LongDate \n\t}\n\t//3.6-3.7\n\tfunction showSecondsLeft() {\n\t\tvar SecondsPast = (new Date().getHours() * 60 * 60 + new Date().getMinutes() * 60 + new Date().getSeconds())\n\t\tvar totalSeconds = 60 * 60 * 24\n\t\tvar SecondsRemain = totalSeconds - SecondsPast\n\t\tdocument.getElementById('ouptut1').innerHTML += \"<b>Total Seconds: </b>\" + totalSeconds +  \"<br>\"\n\t\tdocument.getElementById('ouptut1').innerHTML += \"Past: \" + SecondsPast + \"<br>\"\n\t\tdocument.getElementById('ouptut1').innerHTML += \"Remain: \" + SecondsRemain\n\t}\n\t//3.8\n\tfunction showFormatedDate (d) {\n\t\tvar unit = d\n\t\tvar options = {\n\t\t\tyear: '2-digit',\n\t\t\tmonth: '2-digit',\n\t\t\tday:'2-digit',\t\t\t\n\t\t}\n\t\tdocument.getElementById('ouptut1').innerHTML = unit.toLocaleString(\"ru\", options)\n\t}\n\t//3.9\n\tfunction showOnlineStatus(date) {\n\t\tvar now = new Date()\n\t\tvar then = (now - date)///1000\n\t\tvar status\n\t\tvar TimeAgo = then / 1000\n\t\t\t\t\n\t\t\tif (then < 1000) { status = 'was online Just Now'}\n\t\t\telse if (1000 < then && then <= 1000 * 60) {status = \"was online \" + Math.round(TimeAgo) + \" seconds ago\" }\n\t\t\telse if (1000 * 60 < then && then <= 1000 * 60 * 60) {status = 'was online ' + Math.round(TimeAgo/60)+' min ago'}\n\t\t\telse if (then > 1000 * 60 * 60) {status = 'was online ' + date.toLocaleString(\"ru\", options)}\n\t\t\telse {status = 'unknown'}\n\t\t\n\t\tdocument.getElementById('ouptut1').innerHTML = status\n\t}\n\tvar rez22\n\tfunction sum(num1) {\n\t\treturn function(num2) {return document.getElementById('ouptut1').innerHTML = rez22 = num1 + num2}\n\t}\n\t/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\t\n\tfunction makeBuffer() {\n\t\tvar ft = ''\n\t\tfunction wtf(A) {\n\t\t\tif(arguments.length == 0) {\n\t\t\t return ft \n\t\t\t}\n\t\t\telse {\n\t\t\t ft += A\n\t\t\t}\n\t\t}\n\n\t\twtf.clear = function() {\n\t\t  ft = '';\n\t\t}\n\t\treturn wtf\n\t}\n\t\n\t//ouptut for function above\n\tfunction MB1() {\n\tvar buffer = makeBuffer()\n\tbuffer('one')\n\tbuffer('two')\n\tbuffer('three')\n\talert (buffer() )\n\tbuffer.clear()\n\talert(buffer() )\n\t}\n\n</script>\n\n\n</body>\n</html>",
 			"file": "tbd.html",
+			"file_size": 6337,
+			"file_write_time": 131829620657118075,
 			"settings":
 			{
-				"buffer_size": 5486,
-				"encoding": "UTF-8",
+				"buffer_size": 6051,
 				"line_ending": "Windows"
 			}
 		}
@@ -766,15 +768,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5486,
+						"buffer_size": 6051,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5254,
-								5254
+								5984,
+								5984
 							]
 						],
 						"settings":
@@ -782,7 +784,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2754.0,
+						"translation.y": 2880.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -824,7 +826,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 126.0
+		"height": 135.0
 	},
 	"output.find_results":
 	{
